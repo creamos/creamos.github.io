@@ -1,0 +1,37 @@
+/* Default styles for larger screens */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Initially hide the links */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the links when the navigation menu is active */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+.menu-button {
+    display: none; /* Initially hide the menu button */
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-button {
+        display: block; /* Show the menu button on mobile screens */
+    }
+}
