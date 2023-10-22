@@ -10,7 +10,7 @@
 }
 
 /* Navbar for mobiles */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .menu-button {
         border-radius: 50%;
         cursor: pointer;
@@ -30,7 +30,7 @@
 }
 
 /* Style when visible */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .menu-button {
         display: block;
         position: absolute;
@@ -42,7 +42,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
 
     /* The side navigation menu */
     .side-nav {
@@ -93,7 +93,7 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (height <= 450px) {
     .side-nav {
         padding-top: 15px;
     }
@@ -108,8 +108,47 @@
     display: none!important; 
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .mobile-only {
         display: inherit;
     }
+}
+
+form {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3 {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: white;
+    font-size: 16px;
+
+}
+
+form button {
+    padding: 15px;
+    background: #ff5361;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles/styles.css" />
         <link rel="stylesheet" type="text/css" href="styles/hamburger-button.css" />
         <title>Alexandre Lacroix — Junior Gameplay Programmer</title>
@@ -30,9 +30,22 @@
 
         <div id="main">
             <h1>Hello World</h1>
-            <p>I'm hosted with GitHub Pages.</p>
+            <div class="container">
+                <form action="https://formsubmit.co/alacroix.dev.pro@gmail.com" method="POST">
+                    <h3>GET IN TOUCH</h3>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email id" required>
+                    <input type="text" name="phone" placeholder="Phone no." required>
+                    <textarea name="message" rows="4"placeholder="Your message"></textarea>
+                    <button type="submit">Send</button>
+
+                    <input type="hidden" name="_subject" value="Contact Email from your website">
+                    <input type="hidden" name="_autoresponse" value="Thank you for contacting me!\nI'll answer you as soon as possible.\n\nAlexandre Lacroix">
+                </form>
+            </div>
         </div>
     </body>
 
     <script src="scripts/mobile-nav.js"></script>
+    <script src="scripts/contact-form.js"/>
 </html>
