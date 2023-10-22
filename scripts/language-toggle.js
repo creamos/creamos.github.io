@@ -4,8 +4,8 @@ function initLanguageToggle() {
 
     langToggle.addEventListener("change", (e) => {
         if (e.currentTarget.checked)
-            translate('fr', 'lng-tag');
+            translate('fr', 'lang-tag');
         else
-            translate('en', 'lng-tag');
+            translate('en', 'lang-tag');
     });
 }

@@ -25,10 +25,7 @@ function Translate() {
 
                 }
             }
-            console.log("Translation completed");
         }
-
-        console.log("Translation started");
         
         xrhFile.send();
     }
