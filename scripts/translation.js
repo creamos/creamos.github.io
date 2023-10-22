@@ -9,7 +9,7 @@ function Translate() {
         _self = this;
         var xrhFile = new XMLHttpRequest();
         //load content data 
-        xrhFile.open("GET", "lang/" + this.lng + ".json", false);
+        xrhFile.open("GET", "lang/" + this.lng + ".json");
         xrhFile.onreadystatechange = function () {
             if (xrhFile.readyState === 4) {
                 if (xrhFile.status === 200 || xrhFile.status == 0) {
@@ -25,7 +25,11 @@ function Translate() {
 
                 }
             }
+            console.log("Translation completed");
         }
+
+        console.log("Translation started");
+        
         xrhFile.send();
     }
 }
