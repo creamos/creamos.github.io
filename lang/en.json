@@ -7,7 +7,11 @@
     "title-hello":"Hello I'm",
     "small-intro":"I'm based in France where I recently completed a master's in Games & Interactive Digital Media.",
 
-    "send":"Send",
+    "form-name":"Name",
+    "form-email":"E-mail",
+    "form-phone":"Phone (optional)",
+    "form-message":"Your message",
+    "form-send":"Send",
 
     "hello-world":"Hello World!",
     "get-in-touch":"Get in touch",

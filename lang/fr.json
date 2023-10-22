@@ -7,7 +7,11 @@
     "title-hello":"Salut moi c'est",
     "small-intro":"Je réside en France près d'Angoulême où j'ai récemment réalisé un Master Jeux et Média Interactifs Numériques.",
 
-    "send":"Envoyer",
+    "form-name":"Nom",
+    "form-email":"E-mail",
+    "form-phone":"N° de téléphone (optionel)",
+    "form-message":"Votre message",
+    "form-send":"Envoyer",
 
     "hello-world":"Coucou le Monde!",
     "get-in-touch":"Contactez-moi",

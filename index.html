@@ -44,15 +44,14 @@
         <div class="container">
             <form action="https://formsubmit.co/95fecb0105986b4664c6e5a0088268d4" method="POST">
                 <h3 lang-tag="contact-me">GET IN TOUCH</h3>
-                <input type="text" name="name" placeholder="Your name" data-translate-placeholder-en="Your name" data-translate-placeholder-fr="Votre nom" required autocomplete="off">
-                <input type="email" name="email" placeholder="Email" data-translate-placeholder-en="Email" data-translate-placeholder-fr="Email" required autocomplete="email">
-                <input type="text" name="phone" placeholder="Phone no.(Optional)" data-translate-placeholder-en="Phone no.(Optional)" data-translate-placeholder-fr="N° de telephone (Optionel)" required autocomplete="mobile">
-                <textarea name="message" rows="4" placeholder="Your message" data-translate-placeholder-en="Your message" data-translate-placeholder-fr="Votre message" ></textarea>
-                <button type="submit" lang-tag="send">Send</button>
+                <input type="text" name="name" placeholder="Name" lang-set-attr="placeholder" lang-tag="form-name" required autocomplete="off">
+                <input type="email" name="email" placeholder="E-mail" lang-set-attr="placeholder" lang-tag="form-email" required autocomplete="email">
+                <input type="text" name="phone" placeholder="Phone (Optional)" lang-set-attr="placeholder" lang-tag="form-phone" required autocomplete="mobile">
+                <textarea name="message" rows="4" placeholder="Your message" lang-set-attr="placeholder" lang-tag="form-message" required></textarea>
+                <button type="submit" lang-tag="form-send">Send</button>
 
                 <input type="hidden" name="_subject" value="Contact Email from your website">
-                <input type="hidden" name="_autoresponse"
-                    value="Thank you for contacting me! I'll recontact you as soon as possible. Have a nice day!">
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I'll recontact you as soon as possible. Have a nice day!">
             </form>
         </div>
     </div>

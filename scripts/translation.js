@@ -19,7 +19,12 @@ function Translate() {
                         var elem = allDom[i];
                         var key = elem.getAttribute(_self.attribute);
                         if (key != null) {
-                            elem.innerHTML = LngObject[key];
+                            //check if an attribute has to be set instead of the innerHTML
+                            var attributeToSet = elem.getAttribute("lang-set-attr");
+                            if (attributeToSet != null)
+                                elem.setAttribute(attributeToSet, LngObject[key]);
+                            else
+                                elem.innerHTML = LngObject[key];
                         }
                     }
 
