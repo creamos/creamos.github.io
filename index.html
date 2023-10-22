@@ -24,25 +24,25 @@
             </button>
 
             <div id="sideNav" class="side-nav">
-                <a href="#"><div data-lang="en">Home</div><div data-lang="fr" class="hide">Accueil</div></a>
-                <a href="#"><div data-lang="en">Projects</div><div data-lang="fr" class="hide">Projets</div></a>
-                <a href="#"><div data-lang="en">Resume</div><div data-lang="fr" class="hide">CV</div></a>
-                <a href="#"><div data-lang="en">Contact</div><div data-lang="fr" class="hide">Contact</div></a>
+                <a href="#" lang-tag="home">Home</a>
+                <a href="#" lang-tag="projects">Projects</a>
+                <a href="#" lang-tag="resume">Resume</a>
+                <a href="#" lang-tag="contact-me">Contact</a>
             </div>
         </nav>
     </header>
     <!-- Rest of your content goes here -->
 
     <div id="main">
-        <h1 data-lang="en">Hello World</h1><h1 data-lang="fr" class="hide">Coucou le monde</h1>
+        <h1 lang-tag="hello-world">Hello World</h1>
         <div class="container">
             <form action="https://formsubmit.co/95fecb0105986b4664c6e5a0088268d4" method="POST">
-                <h3 data-lang="en">GET IN TOUCH</h3><h3 data-lang="fr" class="hide">CONTACTEZ-MOI</h3>
+                <h3 lang-tag="contact-me">GET IN TOUCH</h3>
                 <input type="text" name="name" placeholder="Your name" data-translate-placeholder-en="Your name" data-translate-placeholder-fr="Votre nom" required autocomplete="off">
                 <input type="email" name="email" placeholder="Email" data-translate-placeholder-en="Email" data-translate-placeholder-fr="Email" required autocomplete="email">
                 <input type="text" name="phone" placeholder="Phone no.(Optional)" data-translate-placeholder-en="Phone no.(Optional)" data-translate-placeholder-fr="N° de telephone (Optionel)" required autocomplete="mobile">
                 <textarea name="message" rows="4" placeholder="Your message" data-translate-placeholder-en="Your message" data-translate-placeholder-fr="Votre message" ></textarea>
-                <button type="submit">Send</button>
+                <button type="submit" lang-tag="send">Send</button>
 
                 <input type="hidden" name="_subject" value="Contact Email from your website">
                 <input type="hidden" name="_autoresponse"
@@ -57,9 +57,15 @@
         <span class="en">EN</span>
         <span class="fr">FR</span>
     </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"/>
     <script src="scripts/mobile-nav.js"></script>
     <script src="scripts/contact-form.js"></script>
-    <script src="scripts/toggle-language.js"></script>
+    <!-- Translation Related Stuff -->
+    <script src="scripts/translation.js"></script>
+    <script src="scripts/language-toggle.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 
