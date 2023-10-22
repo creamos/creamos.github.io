@@ -9,7 +9,6 @@ document.addEventListener('click', (event) => {
         !menuButton.contains(event.target)
         ) {
         // Close the menu
-        console.log("Closed by window click!");
         closeNav();
     }
 });
@@ -32,8 +31,6 @@ function openNav() {
 
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 
-    console.log("Opened!");
-
 }
   
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -47,6 +44,4 @@ function closeNav() {
     sideNav.style.width = "0";
 
     document.body.style.backgroundColor = "white";
-    
-    console.log("Closed!");
 }

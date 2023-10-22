@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-        <link rel="stylesheet" type="text/css" href="styles/hamburger-button.css" />
-        <title>Alexandre Lacroix — Junior Gameplay Programmer</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <button id="menuButton" class="menu-button" onclick="toggleNav()">
-                        <svg width="32" height="32" viewBox="0 0 100 100">
-                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                            <path class="line line2" d="M 20,50 H 80" />
-                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                        </svg>
-                </button>
-                
-                <div id="sideNav" class="side-nav">
-                    <a href="#">Home</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Resume</a>
-                    <a href="#">Contact</a>
-                </div>
-            </nav>
-        </header>
-        <!-- Rest of your content goes here -->
 
-        <div id="main">
-            <h1>Hello World</h1>
-            <div class="container">
-                <form action="https://formsubmit.co/95fecb0105986b4664c6e5a0088268d4" method="POST">
-                    <h3>GET IN TOUCH</h3>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Email id" required>
-                    <input type="text" name="phone" placeholder="Phone no." required>
-                    <textarea name="message" rows="4"placeholder="Your message"></textarea>
-                    <button type="submit">Send</button>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/language-toggle.css" />
+    <link rel="stylesheet" type="text/css" href="styles/hamburger-button.css" />
+    <title>Alexandre Lacroix — Junior Gameplay Programmer</title>
+</head>
 
-                    <input type="hidden" name="_subject" value="Contact Email from your website">
-                    <input type="hidden" name="_autoresponse" 
-                    value="Thank you for contacting me! I'll recontact you as soon as possible. Have a nice day!">
-                </form>
+<body>
+    <header>
+        <nav>
+            <button id="menuButton" class="menu-button" onclick="toggleNav()">
+                <svg width="32" height="32" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+
+            <div id="sideNav" class="side-nav">
+                <a href="#"><div data-lang="en">Home</div><div data-lang="fr" class="hide">Accueil</div></a>
+                <a href="#"><div data-lang="en">Projects</div><div data-lang="fr" class="hide">Projets</div></a>
+                <a href="#"><div data-lang="en">Resume</div><div data-lang="fr" class="hide">CV</div></a>
+                <a href="#"><div data-lang="en">Contact</div><div data-lang="fr" class="hide">Contact</div></a>
             </div>
-        </div>
-    </body>
+        </nav>
+    </header>
+    <!-- Rest of your content goes here -->
 
+    <div id="main">
+        <h1 data-lang="en">Hello World</h1><h1 data-lang="fr" class="hide">Coucou le monde</h1>
+        <div class="container">
+            <form action="https://formsubmit.co/95fecb0105986b4664c6e5a0088268d4" method="POST">
+                <h3 data-lang="en">GET IN TOUCH</h3><h3 data-lang="fr" class="hide">CONTACTEZ-MOI</h3>
+                <input type="text" name="name" placeholder="Your name" data-translate-placeholder-en="Your name" data-translate-placeholder-fr="Votre nom" required autocomplete="off">
+                <input type="email" name="email" placeholder="Email" data-translate-placeholder-en="Email" data-translate-placeholder-fr="Email" required autocomplete="email">
+                <input type="text" name="phone" placeholder="Phone no.(Optional)" data-translate-placeholder-en="Phone no.(Optional)" data-translate-placeholder-fr="N° de telephone (Optionel)" required autocomplete="mobile">
+                <textarea name="message" rows="4" placeholder="Your message" data-translate-placeholder-en="Your message" data-translate-placeholder-fr="Votre message" ></textarea>
+                <button type="submit">Send</button>
+
+                <input type="hidden" name="_subject" value="Contact Email from your website">
+                <input type="hidden" name="_autoresponse"
+                    value="Thank you for contacting me! I'll recontact you as soon as possible. Have a nice day!">
+            </form>
+        </div>
+    </div>
+
+    <div id="language-switch" class="language-switch">
+        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+        <label for="language-toggle"></label>
+        <span class="en">EN</span>
+        <span class="fr">FR</span>
+    </div>
     <script src="scripts/mobile-nav.js"></script>
-    <script src="scripts/contact-form.js"/>
+    <script src="scripts/contact-form.js"></script>
+    <script src="scripts/toggle-language.js"></script>
+</body>
+
+
 </html>
