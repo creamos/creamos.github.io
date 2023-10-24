@@ -1,25 +1,43 @@
 <div id="nav-container">
-    <div id="home-container">
+    <div id="nav-menu0-container" class="nav-subset-container">
         <div id="home-button"></div>
     </div>
-    <div id="menu-container">
-        <div id="about-button"></div>
-        <div id="projects-button"></div>
-        <div id="resume-button"></div>
+    <div id="nav-menu1-container" class="nav-subset-container">
+        <div id="about-button" class="nav-menu-button"></div>
+        <div id="projects-button" class="nav-menu-button"></div>
+        <div id="resume-button" class="nav-menu-button"></div>
     </div>
-    <div id="menu-container">
-        <div id="about-button"></div>
-        <div id="projects-button"></div>
-        <div id="resume-button"></div>
-    </div>
-    <div id="connection-container">
+    <div id="nav-menu2-container" class="nav-subset-container">
         <div id="contact-button"></div>
         <div id="find-label"></div>
         <div id="socials-container">
-            <div id="itch-button"></div>
-            <div id="linkedin-button"></div>
-            <div id="github-button"></div>
+            <div id="itch-button" class="nav-social-button"></div>
+            <div id="linkedin-button" class="nav-social-button"></div>
+            <div id="github-button" class="nav-social-button"></div>
         </div>
     </div>
-    <div id="lang-toggle"></div>
+    <div id="language-switch" class="language-switch">
+        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+        <label for="language-toggle"></label>
+        <span class="en">EN</span>
+        <span class="fr">FR</span>
+    </div>
 </div>
+<script src="../scripts/translation.js"></script>
+<script src="../scripts/language-toggle.js"></script>
+<script>
+    function addCss(path) {
+
+        var css = document.createElement('link');
+        css.setAttribute('rel', 'stylesheet');
+        css.setAttribute('type', 'text/css');
+        css.setAttribute('href', path);
+        document.head.appendChild(css);
+    }
+    $(document).ready(function () {
+        initLanguageToggle();
+
+        addCss('styles/nav.css');
+        addCss('styles/language-toggle.css');
+    });
+</script>

@@ -1,0 +1,23 @@
+#nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    max-width: 200px;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu-container {
+    background: black;
+    border: solid;
+    border-width: 0 3px;
+    border-color: #1D1D1D;
+    height: 100px;
+}
+
+#menu2-container {
+    flex-grow: 1;
+}
