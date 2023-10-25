@@ -15,16 +15,15 @@
     left: 0;
     width: 220px;
     height: 100vh;
-    background: black;
     display: flex;
     flex-direction: column;
-}
-
-.nav-subset-container {
     background: black;
     border: solid;
     border-width: 0 3px;
     border-color: #1D1D1D;
+}
+
+.nav-subset-container {
     height: fit-content;
     display: flex;
     flex-direction: column;

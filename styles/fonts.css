@@ -1,0 +1,17 @@
+/* Regular weights */
+@font-face { font-family: Lato; src: url('/fonts/Lato-Regular.ttf'); }
+@font-face { font-family: LatoBlack; src: url('/fonts/Lato-Black.ttf'); }
+@font-face { font-family: LatoBold; src: url('/fonts/Lato-Bold.ttf'); }
+@font-face { font-family: LatoLight; src: url('/fonts/Lato-Light.ttf'); }
+@font-face { font-family: LatoThin; src: url('/fonts/Lato-Thin.ttf'); }
+
+/* Italic weights */
+@font-face { font-family: LatoItalic; src: url('/fonts/Lato-Italic.ttf'); }
+@font-face { font-family: LatoBlackItalic; src: url('/fonts/Lato-BlackItalic.ttf'); }
+@font-face { font-family: LatoBoldItalic; src: url('/fonts/Lato-BoldItalic.ttf'); }
+@font-face { font-family: LatoLightItalic; src: url('/fonts/Lato-LightItalic.ttf'); }
+@font-face { font-family: LatoThinItalic; src: url('/fonts/Lato-ThinItalic.ttf'); }
+
+body {
+    font-family: Lato;
+}
