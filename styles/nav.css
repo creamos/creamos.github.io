@@ -101,13 +101,18 @@
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    transition: width 0.5s;
+}
+
+#itch-button * {
+    color: #FA5C5C;
+}
+
+#linkedin-button * {
+    color: #0A66C1;
 }
 
 .nav-social-button:hover {
     background: linear-gradient(#7F7F7F 0 0) padding-box, linear-gradient(#1d1d1d 0 0) border-box;
-    width: 40px;
-    height: 40px;
 }
 
 .nav-social-button:hover .social-icon {
