@@ -6,7 +6,7 @@
     position: relative;
     top: 0;
     left: 220px;
-    right: 0;
+    margin-right: 220px;
 }
 
 #nav-container {
@@ -26,6 +26,8 @@
     border-width: 0 3px;
     border-color: #1D1D1D;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 #menu2-container {
@@ -54,7 +56,20 @@
     border-radius: 6px;
     padding: 5px;
     margin: 1px 0;
+    text-decoration: none;
 }
+
+.nav-menu-button:not(.active-page-button):hover {
+    background: linear-gradient(#7F7F7F 0 0) padding-box, linear-gradient(#1d1d1d 0 0) border-box;
+    color: white;
+}
+
+.active-page-button {
+    background: linear-gradient(white 0 0) padding-box, linear-gradient(to right, #FFF5AE, #FFAAF8) border-box;
+    color: #1d1d1d;
+    font-weight: bold;
+}
+
 
 /* Label styles */
 .tnodeco {
