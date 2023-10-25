@@ -15,14 +15,20 @@
     </div>
     <div id="nav-menu2-container" class="nav-subset-container">
         <div id="contact-button-container">
-            <a id="contact-button" class="nav-menu-button tmedium tcenter tg" lang-tag="contact-me" href="/pages/contact.html"
-            alt="Contact me" title="Contact me">Contact me</a>
+            <a id="contact-button" class="nav-menu-button tsmall tcenter tg" lang-tag="contact-me"
+                href="/pages/contact.html" alt="Contact me" title="Contact me">Contact me</a>
         </div>
-        <div id="find-label"></div>
+        <div id="find-label" class="tmedium tg tcenter" lang-tag="find-me">Find Me:</div>
         <div id="socials-container">
-            <a id="itch-button" class="nav-social-button"></a>
-            <a id="linkedin-button" class="nav-social-button"></a>
-            <a id="github-button" class="nav-social-button"></a>
+            <a id="itch-button" class="nav-social-button">
+                <i class="social-icon fab fa-itch-io tg"></i>
+            </a>
+            <a id="linkedin-button" class="nav-social-button">
+                <i class="social-icon fab fa-linkedin tg"></i>
+            </a>
+            <a id="github-button" class="nav-social-button">
+                <i class="social-icon fab fa-github tg"></i>
+            </a>
         </div>
     </div>
     <div id="language-switch" class="language-switch">
@@ -59,7 +65,7 @@
 
         addCss('/styles/nav.css');
         addCss('/styles/language-toggle.css');
-        addCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+        addCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css");
 
         highlightMenuButton();
     });

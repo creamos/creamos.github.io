@@ -88,6 +88,37 @@
     font-weight: bold;
 }
 
+/* Social icones */
+.nav-social-button {
+    display: flex;
+    align-content: center;
+    border: 3px solid transparent;
+    border-radius: 32px;
+    background: linear-gradient(black 0 0) padding-box, linear-gradient(#1d1d1d 0 0) border-box;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    height: fit-content;
+    font-size: 28px;
+}
+
+#find-label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: LatoBold;
+}
 
 /* Label styles */
 .tnodeco {
