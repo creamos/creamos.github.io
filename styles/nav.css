@@ -1,3 +1,14 @@
+#nav-placeholder {
+    width: fit-content;
+}
+
+#page-content {
+    position: relative;
+    top: 0;
+    left: 220px;
+    right: 0;
+}
+
 #nav-container {
     position: absolute;
     top: 0;
@@ -37,11 +48,19 @@
     margin: 0;
 }
 
+.nav-menu-button {
+    background: linear-gradient(#101010 0 0) padding-box, linear-gradient(#1d1d1d 0 0) border-box;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 1px 0;
+}
+
+/* Label styles */
 .tnodeco {
     text-decoration: none;
 }
 
-/* Label styles */
 .tbold {
     font-weight: bold;
 }
@@ -56,6 +75,10 @@
 }
 
 .tmedium {
+    font-size: 25px;
+}
+
+.tsmall {
     font-size: 16px;
 }
 
