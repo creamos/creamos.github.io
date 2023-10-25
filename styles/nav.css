@@ -2,15 +2,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 15vw;
-    max-width: 200px;
+    width: 220px;
     height: 100vh;
     background: black;
     display: flex;
     flex-direction: column;
 }
 
-.nav-menu-container {
+.nav-subset-container {
     background: black;
     border: solid;
     border-width: 0 3px;
@@ -20,4 +19,47 @@
 
 #menu2-container {
     flex-grow: 1;
+}
+
+#home-button {
+    background: linear-gradient(#1d1d1d 0 0) padding-box, linear-gradient(to right, #FFF5AE, #FFAAF8) border-box;
+    border: 6px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 6px 0;
+}
+
+#home-button p {
+    margin: 0;
+}
+
+/* Label styles */
+.tbold {
+    font-weight: bold;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+/* Label sizes */
+.tbig {
+    font-size: 30px;
+}
+
+.tmedium {
+    font-size: 16px;
+}
+
+/* Label colors */
+.tg {
+    color: #7F7F7F;
+}
+
+.tw {
+    color: white;
 }
