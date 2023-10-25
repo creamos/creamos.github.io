@@ -32,7 +32,7 @@ function Translate() {
         if (langTables[this.lng] != null) {
             this.translateDocument();
         } else {
-            xrhFile.open("GET", "lang/" + this.lng + ".json");
+            xrhFile.open("GET", "/lang/" + this.lng + ".json");
             xrhFile.onreadystatechange = function () {
                 if (xrhFile.readyState === 4) {
                     if (xrhFile.status === 200 || xrhFile.status == 0) {
