@@ -6,17 +6,23 @@
         </a>
     </div>
     <div id="nav-menu1-container" class="nav-subset-container">
-        <a id="about-button" class="nav-menu-button tmedium tcenter tg" lang-tag="about-me" href="/pages/aboutme.html" alt="About me" title="About me">About me</a>
-        <a id="projects-button" class="nav-menu-button tmedium tcenter tg" lang-tag="projects" href="/pages/projects.html" alt="Projects" title="Projects">Projects</a>
-        <a id="resume-button" class="nav-menu-button tmedium tcenter tg" lang-tag="resume" href="/pages/resume.html" alt="Resume" title="Resume">Resume</a>
+        <a id="about-button" class="nav-menu-button tmedium tcenter tg" lang-tag="about-me" href="/pages/aboutme.html"
+            alt="About me" title="About me">About me</a>
+        <a id="projects-button" class="nav-menu-button tmedium tcenter tg" lang-tag="projects"
+            href="/pages/projects.html" alt="Projects" title="Projects">Projects</a>
+        <a id="resume-button" class="nav-menu-button tmedium tcenter tg" lang-tag="resume" href="/pages/resume.html"
+            alt="Resume" title="Resume">Resume</a>
     </div>
     <div id="nav-menu2-container" class="nav-subset-container">
-        <div id="contact-button"></div>
+        <div id="contact-button-container">
+            <a id="contact-button" class="tmedium tcenter" lang-tag="contact-me" href="/pages/contact.html"
+            alt="Contact me" title="Contact me">Contact me</a>
+        </div>
         <div id="find-label"></div>
         <div id="socials-container">
-            <div id="itch-button" class="nav-social-button"></div>
-            <div id="linkedin-button" class="nav-social-button"></div>
-            <div id="github-button" class="nav-social-button"></div>
+            <a id="itch-button" class="nav-social-button"></a>
+            <a id="linkedin-button" class="nav-social-button"></a>
+            <a id="github-button" class="nav-social-button"></a>
         </div>
     </div>
     <div id="language-switch" class="language-switch">
@@ -33,14 +39,28 @@
 
         var css = document.createElement('link');
         css.setAttribute('rel', 'stylesheet');
-        css.setAttribute('type', 'text/css');
+        //css.setAttribute('type', 'text/css');
         css.setAttribute('href', path);
         document.head.appendChild(css);
     }
+
+    function highlightMenuButton() {
+        var buttons = document.getElementsByClassName('nav-menu-button');
+
+        var url = window.location.href;
+        for (let index = 0; index < buttons.length; index++) {
+            var element = buttons[index];
+            if (element.href == url) element.classList.add('active-page-button');
+        }
+    }
+
     $(document).ready(function () {
         initLanguageToggle();
 
         addCss('/styles/nav.css');
         addCss('/styles/language-toggle.css');
+        addCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+        highlightMenuButton();
     });
 </script>
