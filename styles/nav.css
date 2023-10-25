@@ -14,7 +14,7 @@
     border: solid;
     border-width: 0 3px;
     border-color: #1D1D1D;
-    height: 100px;
+    height: fit-content;
 }
 
 #menu2-container {
@@ -35,6 +35,10 @@
 
 #home-button p {
     margin: 0;
+}
+
+.tnodeco {
+    text-decoration: none;
 }
 
 /* Label styles */
