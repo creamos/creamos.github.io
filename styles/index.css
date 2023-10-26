@@ -5,3 +5,12 @@
 .home-title {
     margin-bottom: -15px;
 }
+
+#profile-picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    aspect-ratio: 0.8666;
+    height: 600px;
+    width: auto;
+}
