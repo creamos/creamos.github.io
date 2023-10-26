@@ -12,6 +12,42 @@
 @font-face { font-family: LatoLightItalic; src: url('/fonts/Lato-LightItalic.ttf'); }
 @font-face { font-family: LatoThinItalic; src: url('/fonts/Lato-ThinItalic.ttf'); }
 
-body {
+body, .tfregular {
     font-family: Lato;
+}
+
+.tfblack {
+    font-family: LatoBlack;
+}
+
+.tfbold {
+    font-family: LatoBold;
+}
+
+.tflight {
+    font-family: LatoLight;
+}
+
+.tfthin {
+    font-family: LatoThin;
+}
+
+.tfregular.tfitalic {
+    font-family: LatoItalic;
+}
+
+.tfblack.tfitalic {
+    font-family: LatoBlackItalic;
+}
+
+.tfbold.tfitalic {
+    font-family: LatoBoldItalic;
+}
+
+.tflight.tfitalic {
+    font-family: LatoLightItalic;
+}
+
+.tfthin.tfitalic {
+    font-family: LatoThinItalic;
 }
