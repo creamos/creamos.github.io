@@ -3,16 +3,24 @@
     text-decoration: none;
 }
 
-.tspecialchar {
-    white-space: pre-wrap;
-}
-
 .tbold {
     font-weight: bold;
 }
 
 .tcenter {
     text-align: center;
+}
+
+.tleft {
+    text-align: left;
+}
+
+.tright {
+    text-align: right;
+}
+
+.tjustify {
+    text-align: justify;
 }
 
 .thfit {

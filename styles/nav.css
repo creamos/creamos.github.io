@@ -10,7 +10,7 @@
 }
 
 #nav-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 220px;
@@ -21,6 +21,7 @@
     border: solid;
     border-width: 0 3px;
     border-color: #1D1D1D;
+    z-index: 10;
 }
 
 .nav-subset-container {
@@ -35,7 +36,7 @@
 
 #home-button {
     background: linear-gradient(#1d1d1d 0 0) padding-box, linear-gradient(to right, #FFF5AE, #FFAAF8) border-box;
-    border: 6px solid transparent;
+    border: 2px solid transparent;
     border-radius: 15px;
     display: flex;
     margin: 15px;

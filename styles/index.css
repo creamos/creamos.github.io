@@ -1,16 +1,73 @@
+#root {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
 #page-content {
     margin: 70px 120px;
 }
 
-.home-title {
+#home-title-container {
+    width: 350px;
+}
+
+#home-title {
     margin-bottom: -15px;
+    letter-spacing: 0.1em;
+}
+
+#home-intro-container {
+    padding: 160px 0;
+    max-width: 50%;
+}
+
+#home-intro-content {
+    margin-top: 1em;
+    letter-spacing: 0.1em;
 }
 
 #profile-picture {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     aspect-ratio: 0.8666;
-    height: 600px;
+    height: 450px;
     width: auto;
+    margin: 40px 5%;
+}
+
+#deco-0 {
+    position: fixed;
+    top: -65px;
+    right: -10px;
+    width: 400px;
+    z-index: -10;
+}
+
+#deco-1 {
+    position: fixed;
+    bottom: 0;
+    left: 220px;
+    translate: 50px -20px;
+    width: 250px;
+    z-index: -10;
+    rotate: 180deg;
+}
+
+#deco-2 {
+    position: fixed;
+    bottom: 0;
+    left: 220px;
+    translate: 295px -20px;
+    width: 250px;
+    z-index: -10;
+    rotate: 0deg;
+}
+
+
+.standard-title {
+    color: #7F7F7F;
+    font-weight: bold;
 }
