@@ -51,7 +51,7 @@ const regColorTag = new RegExp("\\[color\\:[ ]*#(\\w+)\\]\\(([^\\)]*)\\)", "g");
 
 function processCommands(jsonText) {
     var msg = jsonText;
-    msg = msg.replaceAll(regColorTag, '\<span style\=\"color: #$1\"\>$2\<\/span\>');
+    msg = msg.replaceAll(regColorTag, '\<span style\=\\\"color: #$1\\\"\>$2\<\/span\>');
 
     return msg;
 }
@@ -62,31 +62,3 @@ function translate(lng, tagAttr) {
     translate.init(tagAttr, lng);
     translate.process();
 }
-
-/*
-xrhFile.open("GET", "lang/" + this.lng + ".json");
-        xrhFile.onreadystatechange = function () {
-            if (xrhFile.readyState === 4) {
-                if (xrhFile.status === 200 || xrhFile.status == 0) {
-                    var LngObject = JSON.parse(xrhFile.responseText);
-                    var allDom = document.getElementsByTagName("*");
-                    for (var i = 0; i < allDom.length; i++) {
-                        var elem = allDom[i];
-                        var key = elem.getAttribute(_self.attribute);
-                        if (key != null) {
-                            //check if an attribute has to be set instead of the innerHTML
-                            var attributeToSet = elem.getAttribute("lang-set-attr");
-                            if (attributeToSet != null)
-                                elem.setAttribute(attributeToSet, LngObject[key]);
-                            else
-                                elem.innerHTML = LngObject[key];
-                        }
-                    }
-
-                }
-            }
-        }
-        
-        xrhFile.send();
-
-*/
