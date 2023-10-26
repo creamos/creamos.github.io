@@ -1,18 +1,32 @@
 {
+    // Nav tabs
     "about-me":"About me",
     "projects":"Projects",
     "resume":"Resume",
     "find-me":"Find me:",
     "contact-me":"Contact me",
+
+    // Homepage
     "title-hello":"Hello I'm",
     "small-intro":"I'm based in France where I recently completed a master's in Games & Interactive Digital Media.",
 
+    // About me
+    "im-a":"I'm a",
+    "create-games":"I create games",
+    "about-content-0":"Hello there!<br></br>I’m Alexandre Lacroix, a [color: #FA5C5C](junior gameplay programmer) soon to be a proud graduate with a Master's degree from a well-regarded national university in [color: #FA5C5C](France).",
+    "about-content-1":"I've had the opportunity to work on a variety of projects like developing some [color: #FA5C5C](ecosystem simulations), working on some [color: #FA5C5C](boardgame-inspired strategy games) or even fast-paced FPS and [color: #FA5C5C](parkour games).<br></br>I’m very [color: #FA5C5C](curious) and I don’t hesitate to explore new areas of the programming sphere. From the basics of [color: #FA5C5C](engine programming) through the prototyping of a Minecraft clone in pure [color: #FA5C5C](C++), to the experimentation of [color: #FA5C5C](data-oriented architecture) with the DOTS framework of Unity.<br></br>While I mostly work on game engines like [color: #FA5C5C](Unity) and [color: #FA5C5C](Unreal Engine), my curiosity made me approach more exotic ones like [color: #FA5C5C](Pico-8).",
+    "about-sidenote-header":"A job or internship opportunity in mind?",
+    "about-sidenote":"I'm all ears! Let's discuss how I can contribute to your projects!",
+
+
+    // Form
     "form-name":"Name",
     "form-email":"E-mail",
     "form-phone":"Phone (optional)",
     "form-message":"Your message",
     "form-send":"Send",
 
+    // Tests
     "hello-world":"Hello World!",
     "get-in-touch":"Get in touch",
     "home":"Home"

@@ -36,7 +36,7 @@ function Translate() {
             xrhFile.onreadystatechange = function () {
                 if (xrhFile.readyState === 4) {
                     if (xrhFile.status === 200 || xrhFile.status == 0) {
-                        langTables[_self.lng] = JSON.parse(xrhFile.responseText);
+                        langTables[_self.lng] = JSON.parse(processCommands(JSON.minify(xrhFile.responseText)));
                         _self.translateDocument();
                     }
                 }
@@ -45,9 +45,17 @@ function Translate() {
             xrhFile.send();
         }
     }
-
-    
 }
+
+const regColorTag = new RegExp("\\[color\\:[ ]*#(\\w+)\\]\\(([^\\)]*)\\)", "g");
+
+function processCommands(jsonText) {
+    var msg = jsonText;
+    msg = msg.replaceAll(regColorTag, '\<span style\=\"color: #$1\"\>$2\<\/span\>');
+
+    return msg;
+}
+
 
 function translate(lng, tagAttr) {
     var translate = new Translate();
