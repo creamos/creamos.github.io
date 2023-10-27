@@ -24,14 +24,10 @@ function ProjectListFactory() {
 
             var location = {...entry};
             for (var i = 0; i < lastIndex; i++){
-                console.log("next step: ");
-                console.log(path[i]);
-                console.log(location);
                 location = {...location[path[i]]};
             }
 
             var result = location[path[lastIndex]];
-            console.log(result);
             return result;
         }
 
@@ -41,7 +37,6 @@ function ProjectListFactory() {
 
 
             for (let index = 0; index < projectsTable.length; index++) {
-                console.log(projectsTable[index]);
                 const projectEntry = projectsTable[index];
                 container.appendChild(document.importNode(template, true))
                 const entry = container.children[container.children.length-1];
