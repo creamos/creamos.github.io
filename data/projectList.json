@@ -24,5 +24,32 @@
         "thumbnail":"/media/projectsThumbnails/psychoquake.png",
         "tags":["FPS", "fast-paced", "multiplayer", "Unity"],
         "interest":2
+    },
+
+    {
+        "title":"Hell evator",
+        "platform":{"name":"itch.io", "link":"https://mariecajou.itch.io/hellevator"},
+        "topic":"School project<br/>Game",
+        "thumbnail":"/media/projectsThumbnails/hell-evator.png",
+        "tags":["alternative-controller", "scoring", "Arduino", "joycon", "Unity"],
+        "interest":2
+    },
+
+    {
+        "title":"Buddies Breakout",
+        "platform":{"name":"itch.io", "link":"https://creamos.itch.io/buddies-breakout"},
+        "topic":"Gamejam entry<br/>Game",
+        "thumbnail":"/media/projectsThumbnails/placeholder.png",
+        "tags":["top-down", "stealth", "AI", "web-gl", "Unity"],
+        "interest":1
+    },
+
+    {
+        "title":"Dive Bomb",
+        "platform":{"name":"itch.io", "link":"https://louis-vogel.itch.io/divebomb"},
+        "topic":"Gamejam entry<br/>Game",
+        "thumbnail":"/media/projectsThumbnails/placeholder.png",
+        "tags":["scoring", "mini-game", "solo", "web-gl", "Unity"],
+        "interest":1
     }
 ]
