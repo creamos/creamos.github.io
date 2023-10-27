@@ -39,12 +39,24 @@ hr {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     gap: 10px;
+    margin-top: 40px;
     justify-content: center;
+}
+
+.interest-3 {
+    background: linear-gradient(white 0 0) padding-box, linear-gradient(to right, #FF67C3, #FFDD5A) border-box;
+}
+
+.interest-2 {
+    background: linear-gradient(white 0 0) padding-box, linear-gradient(to right, #67aeff, #4091ed) border-box;
+}
+
+.interest-1 {
+    background: linear-gradient(white 0 0) padding-box, linear-gradient(to right, #aadf6a, #86bb46) border-box;
 }
 
 .project-item-panel {
     border: 6px solid transparent;
-    background: linear-gradient(white 0 0) padding-box, linear-gradient(to right, #FF67C3, #FFDD5A) border-box;
     border-radius: 6px;
     padding: 5px 0;
 }

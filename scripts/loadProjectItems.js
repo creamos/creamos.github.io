@@ -59,6 +59,8 @@ function ProjectListFactory() {
                             field.innerHTML = getEntryField(projectEntry, key);
                     }
                 }
+
+                entry.classList.add("interest-"+ projectEntry["interest"]);
             }
 
         }
