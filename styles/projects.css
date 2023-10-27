@@ -3,3 +3,30 @@
     grid-template-columns: auto auto auto auto;
     gap: 10px;
 }
+
+.project-item-panel {
+    border: 3px solid transparent;
+    background: linear-gradient(white 0 0) padding-box, linear-gradient(black 0 0) border-box;
+    border-radius: 15px;
+}
+
+.project-item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-item-header a {
+    text-decoration: none;
+}
+
+.project-item-title {
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.project-item-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
