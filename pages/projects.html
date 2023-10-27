@@ -27,6 +27,25 @@
     </div>
 
 
+    <template id="project-item-template">
+        <div class="project-item-panel">
+            <div class="project-item-header">
+                <a entry-tag="platform.link" entry-set-attr="href">
+                    <div class="project-item-platform" entry-tag="platform.name"></div>
+                </a>
+                <div class="project-item-topic" entry-tag="topic"></div>
+            </div>
+        
+            <div class="project-item-title" entry-tag="title"></div>
+            <img class="project-item-thumbnail" entry-tag="thumbnail" entry-set-attr="src">
+        
+            <div class="project-item-footer">
+                <img class="project-item-tag-icon" src="">
+                <div class="project-item-tags" entry-tag="tags"></div>
+            </div>
+        </div>
+    </template>
+
     <script src="/scripts/plugins/minify.json.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -37,7 +56,7 @@
     <script src="/scripts/loadProjectItems.js"></script>
     <script>
         var listFactory = new ProjectListFactory();
-        listFactory.loadProjectItems("/data/projectList.json", document.getElementById("projects-list"));
+        listFactory.load("/data/projectList.json", document.getElementById("projects-list"));
     </script>
 </body>
 
