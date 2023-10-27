@@ -4,7 +4,7 @@
         "platform":{"name":"itch.io", "link":"https://creamos.itch.io/the-goddesses-are-gone"},
         "topic":"School project<br/>Game",
         "thumbnail":"/media/projectsThumbnails/goddesses.png",
-        "tags":["board-game", "strategy", "UI", "cards", "turn-by-turn", "Unity"],
+        "tags":["board-game", "strategy", "UI", "cards", "turn-by-turn", "tool", "Unity"],
         "interest":3
     },
 
@@ -51,5 +51,23 @@
         "thumbnail":"/media/projectsThumbnails/placeholder.png",
         "tags":["scoring", "mini-game", "solo", "web-gl", "Unity"],
         "interest":1
+    },
+
+    {
+        "title":"Pikmin boids",
+        "platform":{"name":"github", "link":"#"},
+        "topic":"System study<br/>Prototype",
+        "thumbnail":"/media/projectsThumbnails/placeholder.png",
+        "tags":["boid", "data-oriented", "solo", "tool", "Unity"],
+        "interest":2
+    },
+
+    {
+        "title":"WFC city generator",
+        "platform":{"name":"github", "link":"#"},
+        "topic":"System study<br/>Prototype",
+        "thumbnail":"/media/projectsThumbnails/placeholder.png",
+        "tags":["procedural-generation", "WFC", "tool", "Unity"],
+        "interest":2
     }
 ]
