@@ -19,7 +19,15 @@
 <body>
     <div id="nav-placeholder"></div>
     <div id="page-content">
-        <div>Projects</div>
+        <div id="projects-header">
+            <hr>
+            <div id="projects-header-title-container">
+                <div id="projects-header-title-0" lang-tag="projects-title-0"></div>
+                <div id="projects-header-title-1" lang-tag="projects-title-1"></div>
+                <hr>
+            </div>
+            <hr>
+        </div>
 
         <div id="projects-list">
             
@@ -33,15 +41,17 @@
                 <a entry-tag="platform.link" entry-set-attr="href">
                     <div class="project-item-platform" entry-tag="platform.name"></div>
                 </a>
-                <div class="project-item-topic" entry-tag="topic"></div>
+                <div class="project-item-topic tg tbold" entry-tag="topic"></div>
             </div>
         
-            <div class="project-item-title" entry-tag="title"></div>
-            <img class="project-item-thumbnail" entry-tag="thumbnail" entry-set-attr="src">
+            <div class="project-item-title tmedium" entry-tag="title"></div>
+            <div class="project-item-thumbnail-container">
+                <img class="project-item-thumbnail" entry-tag="thumbnail" entry-set-attr="src">
+            </div>
         
             <div class="project-item-footer">
                 <img class="project-item-tag-icon" src="/media/tag.png">
-                <div class="project-item-tags" entry-tag="tags"></div>
+                <div class="project-item-tags tfbold" entry-tag="tags"></div>
             </div>
         </div>
     </template>

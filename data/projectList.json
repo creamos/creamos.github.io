@@ -4,7 +4,8 @@
         "platform":{"name":"itch.io", "link":"https://creamos.itch.io/the-goddesses-are-gone"},
         "topic":"School project<br/>Game",
         "thumbnail":"/media/projectsThumbnails/goddesses.png",
-        "tags":["board-game", "strategy", "UI", "cards", "turn-by-turn", "Unity"]
+        "tags":["board-game", "strategy", "UI", "cards", "turn-by-turn", "Unity"],
+        "interest":3
     },
 
     {
@@ -12,6 +13,16 @@
         "platform":{"name":"itch.io", "link":"https://louis-vogel.itch.io/party-knight"},
         "topic":"School project<br/>Vertical slice",
         "thumbnail":"/media/projectsThumbnails/party-knight.png",
-        "tags":["party-game", "multiplayer", "AI", "modular-character", "tool", "Unity"]
+        "tags":["party-game", "multiplayer", "AI", "modular-character", "tool", "Unity"],
+        "interest":3
+    },
+
+    {
+        "title":"PSYCHO Quake",
+        "platform":{"name":"itch.io", "link":"https://louis-vogel.itch.io/psychoquake"},
+        "topic":"School project<br/>Game",
+        "thumbnail":"/media/projectsThumbnails/psychoquake.png",
+        "tags":["FPS", "fast-paced", "multiplayer", "Unity"],
+        "interest":2
     }
 ]
