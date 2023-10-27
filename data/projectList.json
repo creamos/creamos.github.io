@@ -1,0 +1,17 @@
+{
+    "goddesses":{
+        "title":"The Goddesses Are Gone",
+        "platform":{"name":"itch.io", "link":"https://creamos.itch.io/the-goddesses-are-gone"},
+        "topic":"School project<br></br>Game",
+        "thumbnail":"/media/projectsThumbnails/goddesses.png",
+        "tags":["board-game", "strategy", "UI", "cards", "turn-by-turn", "Unity"]
+    },
+
+    "party-knight":{
+        "title":"Party Knight",
+        "platform":{"name":"itch.io", "link":"https://louis-vogel.itch.io/party-knight"},
+        "topic":"School project<br></br>Vertical slice",
+        "thumbnail":"/media/projectsThumbnails/party-knight.png",
+        "tags":["party-game", "multiplayer", "AI", "modular-character", "tool", "Unity"]
+    }
+}

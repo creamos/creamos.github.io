@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' href="/styles/fonts.css"></link>
     <link rel='stylesheet' type='text/css' href="/styles/text-style.css"></link>
+    <link rel='stylesheet' type='text/css' href="/styles/projects.css"></link>
     <title>Alexandre Lacroix - Projects</title>
 </head>
 
@@ -19,6 +20,10 @@
     <div id="nav-placeholder"></div>
     <div id="page-content">
         <div>Projects</div>
+
+        <div id="projects-list">
+            
+        </div>
     </div>
 
 
@@ -28,6 +33,11 @@
         $(function () {
             $("#nav-placeholder").load("/pages/nav.html");
         });
+    </script>
+    <script src="/scripts/loadProjectItems.js"></script>
+    <script>
+        var listFactory = new ProjectListFactory();
+        listFactory.loadProjectItems("/data/projectList.json", document.getElementById("projects-list"));
     </script>
 </body>
 
