@@ -22,6 +22,7 @@ function Translate() {
                     elem.innerHTML = langTables[this.lng][key];
             }
         }
+        document.documentElement.setAttribute("lang", this.lng);
     }
 
     //fetch lang file if necessary then translate 
