@@ -27,8 +27,10 @@ function ProjectListFactory() {
                 location = {...location[path[i]]};
             }
 
-            var result = location[path[lastIndex]];
-            return result;
+            var result = "" + location[path[lastIndex]];
+            var detectCommaRegex = new RegExp(",([^ ])", "g");
+
+            return result.replaceAll(detectCommaRegex, ', $1');
         }
 
         if ("content" in document.createElement("template")) {
