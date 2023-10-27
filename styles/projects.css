@@ -20,7 +20,9 @@ hr {
 
 #projects-header-title-container>div {
     text-transform: uppercase;
-    height: 1em;
+    max-width: max-content;
+    width: fit-content;
+    height: fit-content;
     font-family: LatoBold;
 }
 

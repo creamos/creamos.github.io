@@ -1,6 +1,7 @@
 #resume-header {
     display: flex;
     align-items: center;
+    margin: 0 0 1em;
 }
 
 hr {
@@ -20,7 +21,9 @@ hr {
 
 #resume-header-title-container>div {
     text-transform: uppercase;
-    height: 1em;
+    max-width: max-content;
+    width: fit-content;
+    height: fit-content;
     font-family: LatoBold;
 }
 
@@ -53,4 +56,24 @@ hr {
     text-align: center;
     box-sizing: border-box;
     margin: 0 0 1em;
+}
+
+#resume-download-frame {
+    margin: 1em 0 0;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#resume-download-frame div {
+    font-size: 25px;
+}
+
+#resume-download-frame a {
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    color: #FA5C5C;
 }
