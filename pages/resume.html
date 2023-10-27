@@ -12,15 +12,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' href="/styles/fonts.css"></link>
     <link rel='stylesheet' type='text/css' href="/styles/text-style.css"></link>
+    <link rel='stylesheet' type='text/css' href="/styles/resume.css"></link>
     <title>Alexandre Lacroix - Resume</title>
 </head>
 
 <body>
     <div id="nav-placeholder"></div>
     <div id="page-content">
-        <div>Resume</div>
+        <div id="resume-header">
+            <hr>
+            <div id="resume-header-title-container">
+                <div id="resume-header-title-0" lang-tag="resume-title-0"></div>
+                <div id="resume-header-title-1" lang-tag="resume-title-1"></div>
+                <hr>
+            </div>
+            <hr>
+        </div>
+
+        <div id="pdf-container">
+            <object class="pdf-frame" title="Resume PDF file" data="/media/AlexandreLacroix-Resume.pdf" type="application/pdf"></object>
+        </div>
+        <div id="resume-download-frame">
+            <div lang-tag="resume-download"></div>
+            <a lang-tag="resume-english-link" href="/media/AlexandreLacroix-Resume.pdf" target="_blank"></a>
+            <a lang-tag="resume-french-link" href="/media/AlexandreLacroix-CV.pdf" target="_blank"></a>
+        </div>
     </div>
-    <iframe src="/media/AlexandreLacroix-Resume.pdf" loading="lazy" title="Resume PDF file" frameborder="0"></iframe>
 
 
     <script src="/scripts/plugins/minify.json.js"></script>

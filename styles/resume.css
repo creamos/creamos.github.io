@@ -1,0 +1,56 @@
+#resume-header {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border: none;
+}
+
+#resume-header>hr {
+    flex-grow: 1;
+    border-top: 1px solid #D4D4D4;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#resume-header-title-container>hr {
+    border-top: 3px dotted #FA5C5C;
+}
+
+#resume-header-title-container>div {
+    text-transform: uppercase;
+    height: 1em;
+    font-family: LatoBold;
+}
+
+#resume-header-title-0 {
+    font-size: 25px;
+    color: #D4D4D4;
+}
+
+#resume-header-title-1 {
+    font-size: 30px;
+    color: #FA5C5C;
+}
+
+
+.pdf-frame {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: inherit;
+    vertical-align: bottom;
+    width: 724px;
+    aspect-ratio: auto 724 / 1024;
+}
+
+#pdf-container {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 0 1em;
+}
