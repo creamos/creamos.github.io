@@ -6,11 +6,13 @@
 }
 
 #page-content {
-    margin: 70px 120px;
+    padding: 70px 120px 0;
+    transition: padding 0.5s;
 }
 
 #home-title-container {
     width: 350px;
+    transition: width 0.5s;
 }
 
 #home-title {
@@ -19,8 +21,9 @@
 }
 
 #home-intro-container {
-    padding: 160px 0;
+    margin: 160px 0;
     max-width: 50%;
+    transition: margin 0.5s;
 }
 
 #home-intro-content {
@@ -36,6 +39,7 @@
     height: 450px;
     width: auto;
     margin: 40px 5%;
+    transition: all 0.5s;
 }
 
 #deco-0 {
@@ -43,13 +47,13 @@
     top: -65px;
     right: -10px;
     width: 400px;
-    z-index: -10;
+    z-index: -1;
 }
 
 #deco-1 {
     position: fixed;
     bottom: 0;
-    left: 220px;
+    left: 0;
     translate: 50px -20px;
     width: 250px;
     z-index: -10;
@@ -59,7 +63,7 @@
 #deco-2 {
     position: fixed;
     bottom: 0;
-    left: 220px;
+    left: 0;
     translate: 295px -20px;
     width: 250px;
     z-index: -10;
@@ -70,4 +74,43 @@
 .standard-title {
     color: #7F7F7F;
     font-weight: bold;
+}
+
+
+@media (height <= 768px) {
+    
+    #deco-1, #deco-2 {
+        display: none;
+    }
+
+    #profile-picture {
+        top:0;
+        bottom:auto;
+    }
+
+    #home-intro-container {
+        margin: 10vh 0;
+    }
+}
+
+@media (width <= 768px), (height <= 768px) {
+
+    #profile-picture {
+        top:0;
+        bottom:auto;
+        
+        aspect-ratio: 0.8666;
+        height: auto;
+        width: 250px;
+        max-width: 50%;
+    }
+
+    #home-title-container {
+        width: 175px;
+    }
+
+    #page-content {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
 }

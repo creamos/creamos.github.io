@@ -1,19 +1,80 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    --sidebar-w: 220px;
+    --sidebar-tr: 0.5s;
+    --topbar-h: 50px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.fader {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: black;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity var(--sidebar-tr);
+}
+
+.menu-open .fader {
+    opacity: 0.5;
+}
+
+
+.menu-open .page-wrapper {
+    -webkit-transform: translate3d(var(--sidebar-w), 0, 0);
+    transform: translate3d(var(--sidebar-w), 0, 0);
+}
+
+.page-wrapper {
+    position: relative;
+    left:0;
+    top: var(--topbar-h);
+    height: 100%;
+    perspective: 1000px;
+    -webkit-transition: -webkit-transform var(--sidebar-tr);
+    transition: transform var(--sidebar-tr);
+}
+
 #nav-placeholder {
-    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    visibility: hidden;
+    width: var(--sidebar-w);
+    height: 100%;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-visibility var(--sidebar-tr);
+    transition: visibility var(--sidebar-tr);
+}
+
+.menu-open #nav-placeholder {
+    visibility: visible;
 }
 
 #page-content {
     position: relative;
+    overflow-y:scroll;
+    height: 100%;
     top: 0;
-    left: 220px;
-    margin-right: 220px;
+    z-index: 0;
 }
 
 #nav-container {
     position: fixed;
     top: 0;
     left: 0;
-    width: 220px;
+    width: var(--sidebar-w);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -143,4 +204,22 @@
     margin-top: 20px;
     margin-bottom: 10px;
     font-family: LatoBold;
+}
+
+#menu-opener {
+    z-index: 1;
+    background: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--topbar-h);
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+
+    #page-content {
+        overflow-y: hidden;
+    }
+    
 }
