@@ -69,6 +69,7 @@ body {
     overflow-y:scroll;
     height: 100%;
     top: 0;
+    margin-right: var(--openerbar-w);
     z-index: 0;
     -webkit-transform: translate3d(var(--openerbar-w), 0, 0);
     transform: translate3d(var(--openerbar-w), 0, 0);

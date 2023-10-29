@@ -40,37 +40,55 @@
         <div id="page-content">
             <div id="main-content">
                 <form action="https://formsubmit.co/95fecb0105986b4664c6e5a0088268d4" method="POST">
-                    <div class="form-panel left">
-                        <input class="form-input" type="email" name="email" placeholder="E-mail" lang-set-attr="placeholder" lang-tag="form-email" required autocomplete="email">
-                        <input class="form-input" type="text" name="name" placeholder="Name" lang-set-attr="placeholder" lang-tag="form-name" required autocomplete="off">
-                        <input class="form-input" type="text" name="phone" placeholder="Phone (Optional)" lang-set-attr="placeholder" lang-tag="form-phone" required autocomplete="mobile">
+
+                    <div class="form-panel-wrapper">
+                        <div class="form-panel left">
+                            <input class="form-input" type="email" name="email" placeholder="E-mail"
+                                lang-set-attr="placeholder" lang-tag="form-email" required autocomplete="email">
+                            <input class="form-input" type="text" name="name" placeholder="Name"
+                                lang-set-attr="placeholder" lang-tag="form-name" required autocomplete="off">
+                            <input class="form-input" type="text" name="phone" placeholder="Phone (Optional)"
+                                lang-set-attr="placeholder" lang-tag="form-phone" required autocomplete="mobile">
+                        </div>
+
+                        <div class="spacer"></div>
                     </div>
 
-                    <div class="form-panel right">
-                        <textarea class="form-input" name="message" rows="4" placeholder="Your message" lang-set-attr="placeholder" lang-tag="form-message" required></textarea>
-                        <button class="form-button" type="submit" lang-tag="form-send">Send</button>
+                    <div class="form-panel-wrapper">
+                        <div class="spacer"></div>
+
+                        <div class="form-panel right">
+                            <textarea class="form-input" name="message" rows="4" placeholder="Your message"
+                                lang-set-attr="placeholder" lang-tag="form-message" required></textarea>
+                            <button class="form-button tmedium tfregular tfitalic" type="submit" lang-tag="form-send">Send</button>
+                        </div>
                     </div>
-    
+
                     <input type="hidden" name="_subject" value="Contact Email from your website">
-                    <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I'll recontact you as soon as possible. Have a nice day!">
+                    <input type="hidden" name="_autoresponse"
+                        value="Thank you for contacting me! I'll recontact you as soon as possible. Have a nice day!">
                 </form>
 
-                <img id="deco-1" src="/media/deco-1.png" />
-                <img id="deco-0" src="/media/deco-2.png" />
-                <img id="deco-2" src="/media/deco-3.png" />
+                <img id="deco-1" src="/media/deco-1.png" class="deco"/>
+                <img id="deco-0" src="/media/deco-2.png" class="deco"/>
+                <img id="deco-2" src="/media/deco-3.png" class="deco"/>
             </div>
 
             <div class="contact-side-panel">
                 <div id="contact-side-header">
-                    <div lang-tag="contact-side-header-0"></div>
-                    <div lang-tag="contact-side-header-1"></div>
+                    <div lang-tag="contact-side-header-0" class="tbig tflight tright"></div>
+                    <div lang-tag="contact-side-header-1" class="tw tlarge tright"></div>
                 </div>
-                
-                <div lang-tag="contact-side-content"></div>
-                <ul>
-                    <li lang-tag="contact-address"></li>
-                    <li lang-tag="contact-phone"></li>
-                </ul>
+
+                <div class="spacer"></div>
+
+                <div class="contact-side-content">
+                    <div lang-tag="contact-side-content" class="contact-side-notice"></div>
+                    <ul>
+                        <li lang-tag="contact-address"></li>
+                        <li lang-tag="contact-phone"></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
