@@ -30,6 +30,13 @@
     "resume-french-link":"In French",
     "resume-filepath":"/media/AlexandreLacroix-Resume.pdf",
 
+    "// Contact":"",
+    "contact-side-header-1":"Want to talk?",
+    "contact-side-header-2":"Contact me",
+    "contact-side-content":"Even though I may not be available right now, I’ll try to answer you as soon as possible.<br/><br/>You can also contact me manually:",
+    "contact-address":"alacroix.dev.pro@gmail.com",
+    "contact-phone":"+33 6 33 33 21 15",
+
     "// Form":"",
     "form-name":"Name",
     "form-email":"E-mail",

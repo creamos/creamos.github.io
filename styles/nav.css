@@ -5,13 +5,14 @@ html, body {
 body {
     --sidebar-w: 220px;
     --sidebar-tr: 0.5s;
-    --topbar-h: 50px;
+    --openerbar-w: 50px;
     position: relative;
     overflow: hidden;
     margin: 0;
 }
 
 .fader {
+    visibility: hidden;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -21,11 +22,13 @@ body {
     background: black;
     opacity: 0;
     z-index: 0;
-    transition: opacity var(--sidebar-tr);
+    transition: opacity var(--sidebar-tr), visibility var(--sidebar-tr);
 }
 
 .menu-open .fader {
+    visibility: visible;
     opacity: 0.5;
+    display: inherit;
 }
 
 
@@ -36,8 +39,7 @@ body {
 
 .page-wrapper {
     position: relative;
-    left:0;
-    top: var(--topbar-h);
+    top: 0;
     height: 100%;
     perspective: 1000px;
     -webkit-transition: -webkit-transform var(--sidebar-tr);
@@ -68,6 +70,14 @@ body {
     height: 100%;
     top: 0;
     z-index: 0;
+    -webkit-transform: translate3d(var(--openerbar-w), 0, 0);
+    transform: translate3d(var(--openerbar-w), 0, 0);
+    transition: all var(--sidebar-tr);
+}
+
+.menu-open {
+    transform: none;
+    -webkit-transform: none;
 }
 
 #nav-container {
@@ -207,14 +217,25 @@ body {
 }
 
 #menu-opener {
+    visibility: visible;
     z-index: 1;
-    background: black;
+    background: #080808;
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
-    height: var(--topbar-h);
+    height: 100%;
+    width: var(--openerbar-w);
+    transform: none;
+    -webkit-transition: transform 0.25s, visibility 0.25s;
+    transition: transform 0.5s, visibility 0.5s;
 }
+
+.menu-open #menu-opener {
+    visibility: hidden;
+    -webkit-transform: translate3d(calc(var(--openerbar-w) *-1), 0, 0);
+    transform: translate3d(calc(var(--openerbar-w) *-1), 0, 0);
+}
+
 
 @media only screen and (hover: none) and (pointer: coarse) {
 

@@ -1,0 +1,11 @@
+.contact-side-panel ul {
+    list-style-position: var(--ul-position);
+    list-style-position: outside;
+    list-style-type: disc;
+  }
+
+.contact-side-panel li {
+    margin-left: 25px;
+    padding-left: 0;
+    white-space: nowrap;
+}

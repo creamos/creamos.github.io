@@ -43,6 +43,7 @@
 }
 
 #deco-0 {
+    user-select: none;
     position: fixed;
     top: -65px;
     right: -10px;
@@ -51,6 +52,7 @@
 }
 
 #deco-1 {
+    user-select: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -61,6 +63,7 @@
 }
 
 #deco-2 {
+    user-select: none;
     position: fixed;
     bottom: 0;
     left: 0;

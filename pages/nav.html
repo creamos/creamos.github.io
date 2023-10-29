@@ -50,6 +50,10 @@
         css.setAttribute('href', path);
         document.head.appendChild(css);
     }
+    
+    function toggleNav(state) {
+            document.body.classList.toggle("menu-open", state);
+    }
 
     function highlightMenuButton() {
         var buttons = document.getElementsByClassName('nav-menu-button');
