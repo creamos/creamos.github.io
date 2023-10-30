@@ -307,7 +307,7 @@ header>h2 {
 header>h2.alt {
     background: var(--color-shade-1);
     font-family: 'LatoLight';
-    padding: 0.25em;
+    padding: 0.25em 1em;
 }
 
 header>p {
