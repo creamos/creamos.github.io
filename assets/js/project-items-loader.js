@@ -8,7 +8,7 @@ function itemTemplate(data) {
         </div>
         <header>
             <h3>${data.title}</h3>
-            <a href="${data.link}" target="_blank" class="project-link icon brands ${data.link-icon}"></a>
+            <a href="${data.link}" target="_blank" class="project-link icon brands ${data.link_icon}"></a>
         </header>
         </article>
     `;
@@ -42,18 +42,11 @@ function projectEntryGenerator() {
 
     this.createPanels = function createPanels(projectsTable, containers) {
 
-        if ("content" in document.createElement("template")) {
-
-            const template = document.querySelector("template#project-item-template").content;
-
-
-            for (let index = 0; index < projectsTable.length; index++) {
-                const projectEntry = projectsTable[index];
-                const container = containers[index%containers.length];
-
-                container.innerHTML += itemTemplate(projectEntry);
-            }
-
+        for (let index = 0; index < projectsTable.length; index++) {
+            const projectEntry = projectsTable[index];
+            const container = containers[index%containers.length];
+            
+            container.insertAdjacentHTML("beforeend", itemTemplate(projectEntry));
         }
 
         return projectsTable;

@@ -1,81 +1,81 @@
 [
     {
         "title":"The Goddesses Are Gone",
-        "link-icon":"fa-itch-io", 
+        "link_icon":"fa-itch-io", 
         "link":"https://creamos.itch.io/the-goddesses-are-gone",
         "topic":"School project<br/>Game",
-        "thumbnail":"/media/projectsThumbnails/goddesses.png",
-        "tags":["board-game", "strategy", "UI", "cards", "turn-by-turn", "tool", "Unity"],
+        "thumbnail":"/images/thumbnails/goddesses.png",
+        "tags":["#board-game #strategy #ui #cards #turn-by-turn #tool #unity"],
         "interest":3
     },
 
     {
         "title":"Party Knight",
-        "link-icon":"fa-itch-io",
+        "link_icon":"fa-itch-io",
         "link":"https://louis-vogel.itch.io/party-knight",
         "topic":"School project - Vertical slice",
-        "thumbnail":"/media/projectsThumbnails/party-knight.png",
-        "tags":["party-game", "multiplayer", "AI", "modular-character", "tool", "Unity"],
+        "thumbnail":"/images/thumbnails/party-knight.png",
+        "tags":["#party-game #multiplayer #ai #modular-character #tool #unity"],
         "interest":3
     },
 
     {
         "title":"PSYCHO Quake",
-        "link-icon":"fa-itch-io",
+        "link_icon":"fa-itch-io",
         "link":"https://louis-vogel.itch.io/psychoquake",
         "topic":"School project<br/>Game",
-        "thumbnail":"/media/projectsThumbnails/psychoquake.png",
-        "tags":["FPS", "fast-paced", "multiplayer", "Unity"],
+        "thumbnail":"/images/thumbnails/psychoquake.png",
+        "tags":["#shooter #fast-paced #multiplayer #unity"],
         "interest":2
     },
 
     {
         "title":"Hell evator",
-        "link-icon":"fa-itch-io",
+        "link_icon":"fa-itch-io",
         "link":"https://mariecajou.itch.io/hellevator",
         "topic":"School project<br/>Game",
-        "thumbnail":"/media/projectsThumbnails/hell-evator.png",
-        "tags":["alternative-controller", "scoring", "Arduino", "joycon", "Unity"],
+        "thumbnail":"/images/thumbnails/hell-evator.png",
+        "tags":["#alternative-controller #scoring #arduino #joycon #unity"],
         "interest":2
     },
 
     {
         "title":"Buddies Breakout",
-        "link-icon":"fa-itch-io",
+        "link_icon":"fa-itch-io",
         "link":"https://creamos.itch.io/buddies-breakout",
         "topic":"Gamejam entry<br/>Game",
-        "thumbnail":"/media/projectsThumbnails/placeholder.png",
-        "tags":["top-down", "stealth", "AI", "web-gl", "Unity"],
+        "thumbnail":"/images/thumbnails/placeholder.png",
+        "tags":["#top-down #stealth #ai #web-gl #unity"],
         "interest":1
     },
 
     {
         "title":"Dive Bomb",
-        "link-icon":"fa-itch-io",
+        "link_icon":"fa-itch-io",
         "link":"https://louis-vogel.itch.io/divebomb",
         "topic":"Gamejam entry<br/>Game",
-        "thumbnail":"/media/projectsThumbnails/placeholder.png",
-        "tags":["scoring", "mini-game", "solo", "web-gl", "Unity"],
+        "thumbnail":"/images/thumbnails/placeholder.png",
+        "tags":["#scoring #mini-game #solo #web-gl #unity"],
         "interest":1
     },
 
     {
         "title":"Pikmin boids",
-        "link-icon":"fa-github",
+        "link_icon":"fa-github",
         "link":"#",
         "topic":"System study<br/>Prototype",
-        "thumbnail":"/media/projectsThumbnails/placeholder.png",
-        "tags":["boid", "data-oriented", "solo", "tool", "Unity"],
+        "thumbnail":"/images/thumbnails/placeholder.png",
+        "tags":["#boid #data-oriented #solo #tool #unity"],
         "interest":2
     },
 
     {
         "title":"WFC city generator",
-        "link-icon":"fa-github",
+        "link_icon":"fa-github",
         "link":"#",
         "topic":"System study<br/>Prototype",
-        "thumbnail":"/media/projectsThumbnails/placeholder.png",
-        "tags":["procedural-generation", "WFC", "tool", "Unity"],
+        "thumbnail":"/images/thumbnails/placeholder.png",
+        "tags":["#procedural-generation #wfc #tool #unity"],
         "interest":2
     }
 ]
