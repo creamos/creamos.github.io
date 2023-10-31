@@ -2038,6 +2038,20 @@ ul.icons a {
     color: var(--color-icon-itch-io) !important;
 }
 
+@media (hover:none) {
+	.fa-linkedin {
+		color: var(--color-icon-linkedin) !important;
+	}
+	
+	.fa-github {
+		color: var(--color-icon-github) !important;
+	}
+	
+	.fa-itch-io {
+		color: var(--color-icon-itch-io) !important;
+	}
+}
+
 /* Form */
 
 form label {
@@ -2394,6 +2408,13 @@ button:active,
     box-shadow: inset 0 0 0.45em 0 var(--color-shade-1);
 }
 
+@media (hover: none) {
+	#header .icons a {
+		color: #fff;
+		box-shadow: inset 0 0 0.45em 0 var(--color-shade-1);
+	}
+}
+
 #logo {
 	position: relative;
 	margin: 1.75em 1.5em 1.5em 1.5em;
@@ -2477,13 +2498,22 @@ button:active,
 	color: var(--color-font-highlight);
 }
 
-#nav ul li a:hover:not(.active), #resume-nav-panel:hover {
+#nav ul li a:hover:not(.active) {
 	color: var(--color-special-0);
 	background: var(--color-shade-1);
 }
 
-#nav ul li a:hover:not(.active) span:before, #resume-nav-panel:hover span:before {
+#nav ul li a:hover:not(.active) span:before {
 	color: var(--color-special-0);
+}
+
+#resume-nav-panel {
+	color: var(--color-special-2);
+	background: var(--color-dark-0);
+}
+
+#resume-nav-panel a, #resume-nav-panel a span, #resume-nav-panel a span:before {
+    color: inherit;
 }
 
 #resume-nav-panel .download-buttons {
@@ -2497,7 +2527,8 @@ button:active,
 	align-items: flex-end;
     justify-content: flex-start;
 	gap: 2px;
-	background: var(--color-special-2);
+    border-right: 2px solid var(--color-special-2);
+    background: var(--color-special-2);
     transform: scaleY(0);
     transform-origin: bottom;
     -moz-transition: transform 0.15s ease-in-out;
