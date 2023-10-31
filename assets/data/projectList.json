@@ -3,7 +3,7 @@
         "title":"The Goddesses Are Gone",
         "link_icon":"fa-itch-io", 
         "link":"https://creamos.itch.io/the-goddesses-are-gone",
-        "topic":"School project<br/>Game",
+        "topic":"School project - Game",
         "thumbnail":"/images/thumbnails/goddesses.png",
         "tags":["#board-game #strategy #ui #cards #turn-by-turn #tool #unity"],
         "interest":3
@@ -23,7 +23,7 @@
         "title":"PSYCHO Quake",
         "link_icon":"fa-itch-io",
         "link":"https://louis-vogel.itch.io/psychoquake",
-        "topic":"School project<br/>Game",
+        "topic":"School project - Game",
         "thumbnail":"/images/thumbnails/psychoquake.png",
         "tags":["#shooter #fast-paced #multiplayer #unity"],
         "interest":2
@@ -33,7 +33,7 @@
         "title":"Hell evator",
         "link_icon":"fa-itch-io",
         "link":"https://mariecajou.itch.io/hellevator",
-        "topic":"School project<br/>Game",
+        "topic":"School project - Game",
         "thumbnail":"/images/thumbnails/hell-evator.png",
         "tags":["#alternative-controller #scoring #arduino #joycon #unity"],
         "interest":2
@@ -43,7 +43,7 @@
         "title":"Buddies Breakout",
         "link_icon":"fa-itch-io",
         "link":"https://creamos.itch.io/buddies-breakout",
-        "topic":"Gamejam entry<br/>Game",
+        "topic":"Gamejam entry - Game",
         "thumbnail":"/images/thumbnails/placeholder.png",
         "tags":["#top-down #stealth #ai #web-gl #unity"],
         "interest":1
@@ -53,7 +53,7 @@
         "title":"Dive Bomb",
         "link_icon":"fa-itch-io",
         "link":"https://louis-vogel.itch.io/divebomb",
-        "topic":"Gamejam entry<br/>Game",
+        "topic":"Gamejam entry - Game",
         "thumbnail":"/images/thumbnails/placeholder.png",
         "tags":["#scoring #mini-game #solo #web-gl #unity"],
         "interest":1
@@ -63,7 +63,7 @@
         "title":"Pikmin boids",
         "link_icon":"fa-github",
         "link":"#",
-        "topic":"System study<br/>Prototype",
+        "topic":"System study - Prototype",
         "thumbnail":"/images/thumbnails/placeholder.png",
         "tags":["#boid #data-oriented #solo #tool #unity"],
         "interest":2
@@ -73,7 +73,7 @@
         "title":"WFC city generator",
         "link_icon":"fa-github",
         "link":"#",
-        "topic":"System study<br/>Prototype",
+        "topic":"System study - Prototype",
         "thumbnail":"/images/thumbnails/placeholder.png",
         "tags":["#procedural-generation #wfc #tool #unity"],
         "interest":2

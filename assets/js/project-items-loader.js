@@ -17,6 +17,7 @@ function itemTemplate(data) {
 function projectEntryGenerator() {
 
     this.run = function findContainersAndPopulate(jsonFile, containerClass) {
+        _self = this;
         containers = document.getElementsByClassName(containerClass);
 
         if (containers.length == 0) console.log("warning: no containers found");
@@ -45,7 +46,7 @@ function projectEntryGenerator() {
         for (let index = 0; index < projectsTable.length; index++) {
             const projectEntry = projectsTable[index];
             const container = containers[index%containers.length];
-            
+
             container.insertAdjacentHTML("beforeend", itemTemplate(projectEntry));
         }
 
