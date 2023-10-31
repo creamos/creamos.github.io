@@ -138,12 +138,13 @@ body {
 	--color-shade-0: #000b;
 	--color-shade-1: #0007;
 	--color-shade-2: #0003;
-
+	
 	--color-background: #fff;
-
+	
 	--color-special-0: #fa5c5c;
     --color-special-1: #ff9494;
     --color-special-2: #9e2525;
+    --color-special-3: #ff00cf;
 
 	--color-font-base: #1d1d1d;
 	--color-font-shaded: #404040;
@@ -2257,6 +2258,7 @@ button:active,
 
 .project-link:before {
     text-decoration: none;
+	color: var(--color-special-3);
 }
 
 .item .project-link:hover:before {
@@ -2485,7 +2487,7 @@ button:active,
 	color: #41484c;
 	text-align: center;
 	width: 1.25em;
-	line-height: 1.75em;
+	/* line-height: 1.75em; */
 }
 
 #nav ul li a.active {
@@ -2770,7 +2772,7 @@ button:active,
 	#nav ul li a span:before {
 		left: 100%;
 		margin-left: -1.25em;
-		line-height: 2.25em;
+		/* line-height: 2.25em; */
 	}
 
 	/* Footer */
