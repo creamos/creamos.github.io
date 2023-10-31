@@ -131,7 +131,7 @@ body {
 	--color-highlight-1: #ddd;
 	--color-highlight-2: #fff;
 
-	--color-dark-0: 0;
+	--color-dark-0: #050505;
 	--color-dark-1: #101215;
 	--color-dark-2: 0;
 
@@ -2340,36 +2340,37 @@ button:active,
 		}
 		*/
 
-#nav ul {
+#nav ul, #resume-nav-panel {
 	list-style: none;
 	padding-left: 0;
 	margin-bottom: 0;
 }
 
-#nav ul li {
+#nav ul li, #resume-nav-panel {
 	padding-left: 0;
+    position: relative;
 }
 
-#nav ul li a {
+#nav ul li a, #resume-nav-panel a {
 	display: block;
 	padding: 0.5em 1.5em 0.5em 1.5em;
 	color: rgba(255, 255, 255, 0.5);
 	text-decoration: none;
 	outline: 0;
 	border: 0;
-	-moz-transition: none;
-	-webkit-transition: none;
-	-ms-transition: none;
+	-moz-transition: background 0.25s;
+	-webkit-transition: background 0.25s;
+	-ms-transition: background 0.25s;
 	transition: background 0.25s;
 }
 
-#nav ul li a span {
+#nav ul li a span, #resume-nav-panel a span {
 	position: relative;
 	display: block;
 	font-size: 0.8em;
 }
 
-#nav ul li a span:before {
+#nav ul li a span:before, #resume-nav-panel a span:before {
 	position: absolute;
 	left: 0;
 	color: #41484c;
@@ -2388,13 +2389,67 @@ button:active,
 	color: var(--color-font-highlight);
 }
 
-#nav ul li a:hover:not(.active) {
+#nav ul li a:hover:not(.active), #resume-nav-panel:hover {
 	color: var(--color-special-0);
 	background: var(--color-shade-1);
 }
 
-#nav ul li a:hover:not(.active) span:before {
+#nav ul li a:hover:not(.active) span:before, #resume-nav-panel:hover span:before {
 	color: var(--color-special-0);
+}
+
+#resume-nav-panel .download-buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    -moz-transition: transform 0.15s ease-in-out;
+    -webkit-transition: transform 0.15s ease-in-out;
+    -ms-transition: transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
+}
+
+#resume-nav-panel:hover .download-buttons {
+    transform: scaleY(100%);
+}
+
+#resume-nav-panel .download-buttons a {
+    width: 25%;
+    height: 100%;
+    text-anchor: middle;
+    background: var(--color-font-base);
+    color: var(--color-special-2) !important;
+    display: flex !important;
+    text-align: center;
+    padding: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#resume-nav-panel .download-buttons a:hover {
+    background: var(--color-dark-0) !important;
+}
+
+@media (hover: none) {
+	#resume-nav-panel {
+		color: var(--color-special-0);
+		background: var(--color-shade-1);
+	}
+
+	#resume-nav-panel span:before {
+		color: var(--color-special-0);
+	}
+
+	#resume-nav-panel .download-buttons {
+		transform: scaleY(100%);
+	}
 }
 
 /* Footer */
@@ -2748,9 +2803,9 @@ button:active,
 	#headerToggle .toggle:before {
 		text-decoration: none;
 		content: '\f0c9';
-		color: #fff;
+		color: var(--color-special-0);
 		font-size: 18px;
-		background: rgba(128, 136, 144, 0.5);
+		background: var(--color-shade-0);
 		border-radius: 0.35em;
 		text-align: center;
 		position: absolute;
