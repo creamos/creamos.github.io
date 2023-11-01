@@ -2499,6 +2499,10 @@ button:active,
 	margin-bottom: 1em;
 }
 
+#project-panel-content .spacer {
+	height: 1.5em;
+}
+
 #project-panel-content h2 {
     text-align: center;
 }
