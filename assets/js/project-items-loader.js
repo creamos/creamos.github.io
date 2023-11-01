@@ -1,7 +1,7 @@
 function itemTemplate(data) {
     return `
         <article class="item">
-        <a onclick="openProjectPanel(${data.path})" class="image fit"><img src="${data.thumbnail}" alt="" /></a>
+        <a onclick="openProjectPanel('${data.path}')" class="image fit"><img src="${data.thumbnail}" alt="" /></a>
         <div class="details">
             <h5 class="topic">${data.topic}</h5>
             <span class="tags">${data.tags}</span>
