@@ -2211,6 +2211,10 @@ button:active,
 	margin-bottom: 40px;
 }
 
+.item>a {
+    cursor: pointer;
+}
+
 .item header {
 	background: var(--color-dark-1);
 	margin: 0;
@@ -2421,6 +2425,7 @@ button:active,
 	height: 100%;
 	outline: 0;
 	border: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #project-close-button a:before {

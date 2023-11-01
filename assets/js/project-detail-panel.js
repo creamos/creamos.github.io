@@ -69,6 +69,7 @@ function getElementTemplateGenerator(type, dataContent) {
         case 'banner': return bannerElement(dataContent);
         case 'left-img': return leftImageElement(dataContent);
         case 'right-img': return rightImageElement(dataContent);
+        case 'video': return videoElement(dataContent);
         default: return '';
     }
 }
@@ -106,5 +107,14 @@ function leftImageElement(data) {
 function rightImageElement(data) {
     return `
         <img class="right" src="${data}" alt="" />
+    `;
+}
+
+function videoElement(data) {
+    return `
+        <video controls width="${data.width}">
+            <source src="${data.link}">
+            Your browser does not support HTML video.
+        </video>
     `;
 }
