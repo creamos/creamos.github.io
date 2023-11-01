@@ -117,11 +117,6 @@
 					<h2>Some of my recent Projects</h2>
 				</header>
 
-				<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-					egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-					Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-					fusce hendrerit lacus ridiculus.</p>
-
 				<div class="row">
 					<div class="project-items-container col-4 col-12-mobile">
 					</div>
@@ -131,6 +126,33 @@
 					
 					<div class="project-items-container col-4 col-12-mobile">	
 					</div>
+				</div>
+			</div>
+
+			<div id="project-panel-wrapper">
+			<div id="project-panel">
+				<div id="project-close-button">
+					<a onclick="closeProjectPanel();"></a>
+				</div>
+				
+				<div id="project-panel-content">
+					<header>
+						<h2 id="project-panel-title">Project Name</h2>
+					</header>
+					
+					<img class="banner" src="images/pic08.jpg" alt="" />
+					
+					<h4>Project Name</h4>
+					<p>This project has been made on Unity, the multiplayer thingy relies on LAN and is based on Mirror, a Unity networking framework.</p>
+
+					<img class="left" src="images/pic04.jpg" alt="" />
+
+					<p>I mainly worked on the programming and did a few vfx, shaders, and props.<br/>
+					<br/>
+					It was really interesting to work on a remote multiplayer game and learn how to synchronize multiple instances of a same scene. I also learned a lot about shaders as I tried different approches of rendering technics for the distant blackhole like raymarching shaders.</p>
+
+					<h4 id="project-panel-title">Project Name</h4>
+					<p>This project has been made on Unity, the multiplayer thingy relies on LAN and is based on Mirror, a Unity networking framework.</p>
 				</div>
 
 			</div>
@@ -188,6 +210,7 @@
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/project-items-loader.js"></script>
+	<script src="assets/js/project-detail-panel.js"></script>
 	<script>
 		var projectEntriesGenerator = new projectEntryGenerator();
         projectEntriesGenerator.run("assets/data/projectList.json", "project-items-container");

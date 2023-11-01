@@ -1,0 +1,9 @@
+{
+    "title":"The Goddesses Are Gone",
+    "content": [
+        { "type": "header", "value": "Introduction" },
+        { "type": "text",   "value": "Your are a mere mortal, lost in the darkest depth of a giant fungi-infested cave. The Goddesses won't hear you scream down there..."},
+        { "type": "space" },
+        { "type": "text",   "value": "The game was developped over the course of 3 months as part of the school year final project. We were a team of 4 students and had to develop a game offering a complete experience over the course of 10-15min."}
+    ]
+}
