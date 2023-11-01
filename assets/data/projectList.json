@@ -6,6 +6,7 @@
         "topic":"School project - Game",
         "thumbnail":"/images/thumbnails/goddesses.png",
         "tags":["#board-game #strategy #ui #cards #turn-by-turn #tool #unity"],
+        "path":"assets/data/projects/the-goddesses.json",
         "interest":3
     },
 
@@ -16,6 +17,7 @@
         "topic":"School project - Vertical slice",
         "thumbnail":"/images/thumbnails/party-knight.png",
         "tags":["#party-game #multiplayer #ai #modular-character #tool #unity"],
+        "path":"assets/data/projects/party-knight.json",
         "interest":3
     },
 
@@ -26,6 +28,7 @@
         "topic":"School project - Game",
         "thumbnail":"/images/thumbnails/psychoquake.png",
         "tags":["#shooter #fast-paced #multiplayer #unity"],
+        "path":"assets/data/projects/psycho-quake.json",
         "interest":2
     },
 
@@ -36,6 +39,7 @@
         "topic":"School project - Game",
         "thumbnail":"/images/thumbnails/hell-evator.png",
         "tags":["#alternative-controller #scoring #arduino #joycon #unity"],
+        "path":"assets/data/projects/hell-evator.json",
         "interest":2
     },
 
@@ -46,6 +50,7 @@
         "topic":"Gamejam entry - Game",
         "thumbnail":"/images/thumbnails/placeholder.png",
         "tags":["#top-down #stealth #ai #web-gl #unity"],
+        "path":"assets/data/projects/buddies-breakout.json",
         "interest":1
     },
 
@@ -56,6 +61,7 @@
         "topic":"Gamejam entry - Game",
         "thumbnail":"/images/thumbnails/placeholder.png",
         "tags":["#scoring #mini-game #solo #web-gl #unity"],
+        "path":"assets/data/projects/dive-bomb.json",
         "interest":1
     },
 
@@ -66,6 +72,7 @@
         "topic":"System study - Prototype",
         "thumbnail":"/images/thumbnails/placeholder.png",
         "tags":["#boid #data-oriented #solo #tool #unity"],
+        "path":"assets/data/projects/pikmin-boids.json",
         "interest":2
     },
 
@@ -76,6 +83,18 @@
         "topic":"System study - Prototype",
         "thumbnail":"/images/thumbnails/placeholder.png",
         "tags":["#procedural-generation #wfc #tool #unity"],
+        "path":"assets/data/projects/wfc-city-gen.json",
         "interest":2
+    }
+
+    {
+        "title":"Robot Factories",
+        "link_icon":"fa-itch-io",
+        "link":"#",
+        "topic":"School Project - Simulation",
+        "thumbnail":"/images/thumbnails/placeholder.png",
+        "tags":["#ecosystem #simulation #ai #tool #unity"],
+        "path":"assets/data/projects/robot-factories.json",
+        "interest":1
     }
 ]

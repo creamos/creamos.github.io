@@ -1,5 +1,16 @@
-function fillPanelFromFile(jsonFile) {
+function openProjectPanel(jsonFile) {
+    
+    fillPanelFromFile(jsonFile);
+    document.getElementById('project-panel-wrapper').classList.toggle("active", true);
+}
 
+function closeProjectPanel() {
+
+    document.getElementById('project-panel-wrapper').classList.toggle("active", false);
+    emptyPanelContent();
+}
+
+function fillPanelFromFile(jsonFile) {
     var xrhFile = new XMLHttpRequest();
 
     // load content data 
@@ -15,11 +26,8 @@ function fillPanelFromFile(jsonFile) {
     xrhFile.send();
 }
 
-
-function fillPanelFromData(jsonData) {
+function emptyPanelContent() {
     var panel = document.getElementById('project-panel-content');
-    
-    // Remove previously filled-in elements
     for (let index = 0; index < panel.childNodes.length; ) {
         const childNode = panel.childNodes[index];
 
@@ -28,13 +36,21 @@ function fillPanelFromData(jsonData) {
         else
             childNode.remove();
     }
+}
+
+function fillPanelFromData(jsonData) {
+
+    // Remove previously filled-in elements
+    emptyPanelContent();
 
     // set title field
     var title = document.getElementById('project-panel-title');
     title.innerHTML = jsonData.title;
     
     // generate the page content
+    var panel = document.getElementById('project-panel-content');
     const contentData = jsonData.content;
+
     for (let index = 0; index < contentData.length; index++) {
         const data = contentData[index];
         

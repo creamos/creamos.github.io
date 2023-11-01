@@ -1,7 +1,7 @@
 function itemTemplate(data) {
     return `
         <article class="item">
-        <a href="#" class="image fit"><img src="${data.thumbnail}" alt="" /></a>
+        <a onclick="openProjectPanel(${data.path})" class="image fit"><img src="${data.thumbnail}" alt="" /></a>
         <div class="details">
             <h5 class="topic">${data.topic}</h5>
             <span class="tags">${data.tags}</span>
@@ -45,7 +45,7 @@ function projectEntryGenerator() {
 
         for (let index = 0; index < projectsTable.length; index++) {
             const projectEntry = projectsTable[index];
-            const container = containers[index%containers.length];
+            const container = containers[Math.floor(index*containers.length/projectsTable.length)];
 
             container.insertAdjacentHTML("beforeend", itemTemplate(projectEntry));
         }
