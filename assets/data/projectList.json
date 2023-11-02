@@ -63,38 +63,5 @@
         "tags":["#scoring #mini-game #solo #web-gl #unity"],
         "path":"assets/data/projects/dive-bomb.json",
         "interest":1
-    },
-
-    {
-        "title":"Pikmin boids",
-        "link_icon":"fa-github",
-        "link":"#",
-        "topic":"System study - Prototype",
-        "thumbnail":"/images/thumbnails/placeholder.png",
-        "tags":["#boid #data-oriented #solo #tool #unity"],
-        "path":"assets/data/projects/pikmin-boids.json",
-        "interest":2
-    },
-
-    {
-        "title":"WFC city generator",
-        "link_icon":"fa-github",
-        "link":"#",
-        "topic":"System study - Prototype",
-        "thumbnail":"/images/thumbnails/placeholder.png",
-        "tags":["#procedural-generation #wfc #tool #unity"],
-        "path":"assets/data/projects/wfc-city-gen.json",
-        "interest":2
-    },
-
-    {
-        "title":"Robot Factories",
-        "link_icon":"fa-itch-io",
-        "link":"#",
-        "topic":"School Project - Simulation",
-        "thumbnail":"/images/thumbnails/placeholder.png",
-        "tags":["#ecosystem #simulation #ai #tool #unity"],
-        "path":"assets/data/projects/robot-factories.json",
-        "interest":1
     }
 ]
