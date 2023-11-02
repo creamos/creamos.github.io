@@ -1,5 +1,14 @@
+$('#project-panel-wrapper').on('click', function (e) {
+    if (e.target !== this)
+        return;
+
+    if (this.classList.contains("active")) {
+        closeProjectPanel();
+    }
+});
+
 function openProjectPanel(jsonFile) {
-    
+
     fillPanelFromFile(jsonFile);
     document.getElementById('project-panel-wrapper').classList.toggle("active", true);
 }
@@ -30,16 +39,16 @@ function emptyPanelContent() {
     var panel = document.getElementById('project-panel-content');
 
     // remove nodes that aren't elements
-    for (let index = 0; index < panel.childNodes.length; ) {
+    for (let index = 0; index < panel.childNodes.length;) {
         const childNode = panel.childNodes[index];
-        
+
         // look for nodes that must be kept
         if (childNode.nodeType == Node.ELEMENT_NODE)
             index++;
         else childNode.remove();
     }
 
-    for (let index = 0; index < panel.children.length; ) {
+    for (let index = 0; index < panel.children.length;) {
         const childElement = panel.children[index];
 
         if (childElement.id == 'project-content-header' || childElement.id == 'project-external-link')
@@ -47,11 +56,11 @@ function emptyPanelContent() {
         else childElement.remove();
     }
 
-        // if (childNode.nodeType == Node.ELEMENT_NODE && childNode.nodeName == "HEADER"||
-        // childNode.elemenel)
-        //     index++
-        // else
-            
+    // if (childNode.nodeType == Node.ELEMENT_NODE && childNode.nodeName == "HEADER"||
+    // childNode.elemenel)
+    //     index++
+    // else
+
 }
 
 function fillPanelFromData(jsonData) {
@@ -66,15 +75,15 @@ function fillPanelFromData(jsonData) {
     // set external link
     var externalLink = document.getElementById('project-external-link').getElementsByTagName('a')[0];
     externalLink.setAttribute("href", jsonData.link);
-    
+
     // generate the page content
     var panel = document.getElementById('project-panel-content');
     const contentData = jsonData.content;
 
     for (let index = 0; index < contentData.length; index++) {
         const data = contentData[index];
-        
-        const template = getElementTemplateGenerator (data.type, data.value);
+
+        const template = getElementTemplateGenerator(data.type, data.value);
         if (!template || template == '') continue; // in case of invalid content
 
         panel.insertAdjacentHTML("beforeend", template);
