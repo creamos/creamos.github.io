@@ -1,6 +1,10 @@
 {
     "title":"PSYCHO quake",
     "content": [
-
+        { "type": "header", "value": "Introduction" },
+        { "type": "text",   "value": "PSYCHO Quake is a multiplayer Quake-like prototype. Up to 8 players can join the battle and team up in a 4v4 confrontation." },
+        { "type": "banner", "value": "images/projects/psycho-quake/banner.png" },
+        { "type": "header", "value": "Context" },
+        { "type": "text", "value": "This project has been made on Unity, the multiplayer thingy relies on LAN and is based on Mirror, a Unity networking framework. I mainly worked on the programming and did a few vfx, shaders, and props. It was really interesting to work on a remote multiplayer game and learn how to synchronize multiple instances of a same scene. I also learned a lot about shaders as I tried different approches of rendering technics for the distant blackhole like raymarching shaders." }
     ]
 }
