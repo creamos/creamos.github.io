@@ -59,7 +59,7 @@
         "link_icon":"fa-itch-io",
         "link":"https://louis-vogel.itch.io/divebomb",
         "topic":"Gamejam entry - Game",
-        "thumbnail":"/images/thumbnails/placeholder.png",
+        "thumbnail":"/images/thumbnails/dive-bomb.png",
         "tags":["#scoring #mini-game #solo #web-gl #unity"],
         "path":"assets/data/projects/dive-bomb.json",
         "interest":1
