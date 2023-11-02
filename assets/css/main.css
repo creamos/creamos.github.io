@@ -2503,6 +2503,11 @@ button:active,
 	height: 1.5em;
 }
 
+#project-panel-content .cleaner {
+	height: 0;
+	clear: both;
+}
+
 #project-panel-content h2 {
     text-align: center;
 }
@@ -2510,7 +2515,7 @@ button:active,
 #project-panel-content h4 {
 	font-weight: bold;
 	color: var(--color-font-highlight-invert);
-	clear:both;
+	clear: both;
 }
 
 @media screen and (max-width: 736px) {

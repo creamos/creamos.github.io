@@ -70,6 +70,7 @@ function getElementTemplateGenerator(type, dataContent) {
         case 'left-img': return leftImageElement(dataContent);
         case 'right-img': return rightImageElement(dataContent);
         case 'video': return videoElement(dataContent);
+        case 'cleaner': return cleanerElement(dataContent);
         default: return '';
     }
 }
@@ -116,5 +117,11 @@ function videoElement(data) {
             <source src="${data.link}">
             Your browser does not support HTML video.
         </video>
+    `;
+}
+
+function cleanerElement(dataContent) {
+    return `
+        <div class="cleaner"></div>
     `;
 }
