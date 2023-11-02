@@ -2468,6 +2468,10 @@ button:active,
 	background: var(--color-icon-linkedin);
 }
 
+#project-panel-content p {
+    margin-bottom: 1em;
+}
+
 #project-panel-content .img {
 	max-width: 100%;
     display: flex;
@@ -2499,6 +2503,8 @@ button:active,
 #project-panel-content .img.left,
 #project-panel-content .img.right {
 	max-width: 33%;
+	overflow-y: clip;
+	max-height: 250pt;
 }
 
 #project-panel-content .img.banner {
