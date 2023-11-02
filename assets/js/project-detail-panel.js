@@ -69,6 +69,7 @@ function getElementTemplateGenerator(type, dataContent) {
         case 'banner': return bannerElement(dataContent);
         case 'left-img': return leftImageElement(dataContent);
         case 'right-img': return rightImageElement(dataContent);
+        case 'center-img': return centerImageElement(dataContent);
         case 'video': return videoElement(dataContent);
         case 'cleaner': return cleanerElement(dataContent);
         default: return '';
@@ -112,6 +113,14 @@ function leftImageElement(data) {
 function rightImageElement(data) {
     return `
         <a class="img right" href="${data}" target="_blank">
+            <img src="${data}" alt="" />
+        </a>
+    `;
+}
+
+function centerImageElement(data) {
+    return `
+        <a class="img center" href="${data}" target="_blank">
             <img src="${data}" alt="" />
         </a>
     `;
