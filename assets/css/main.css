@@ -2465,6 +2465,7 @@ button:active,
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
     column-gap: 2em;
     flex-wrap: wrap;
     margin-bottom: 1em;
