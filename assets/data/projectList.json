@@ -48,7 +48,7 @@
         "link_icon":"fa-itch-io",
         "link":"https://creamos.itch.io/buddies-breakout",
         "topic":"Gamejam entry - Game",
-        "thumbnail":"/images/thumbnails/placeholder.png",
+        "thumbnail":"/images/thumbnails/buddies-breakout.png",
         "tags":["#top-down #stealth #ai #web-gl #unity"],
         "path":"assets/data/projects/buddies-breakout.json",
         "interest":1
