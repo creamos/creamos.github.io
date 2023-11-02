@@ -95,19 +95,25 @@ function spaceElement(data) {
 
 function bannerElement(data) {
     return `
-        <img class="banner" src="${data}" alt="" />
+    <a class="img banner" href="${data}" target="_blank">
+        <img src="${data}" alt="" />
+    </a>
     `;
 }
 
 function leftImageElement(data) {
     return `
-        <img class="left" src="${data}" alt="" />
+        <a class="img left" href="${data}" target="_blank">
+            <img src="${data}" alt="" />
+        </a>
     `;
 }
 
 function rightImageElement(data) {
     return `
-        <img class="right" src="${data}" alt="" />
+        <a class="img right" href="${data}" target="_blank">
+            <img src="${data}" alt="" />
+        </a>
     `;
 }
 

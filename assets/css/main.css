@@ -2468,9 +2468,13 @@ button:active,
 	background: var(--color-icon-linkedin);
 }
 
-#project-panel-content img {
+#project-panel-content .img {
 	border-radius: 10pt;
 	max-width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    border: none;
 
 	-moz-transition: max-width 0.5s ease, padding 0.5s ease;
 	-ms-transition: max-width 0.5s ease, padding 0.5s ease;
@@ -2478,23 +2482,23 @@ button:active,
 	transition: max-width 0.5s ease, padding 0.5s ease;
 }
 
-#project-panel-content img.left {
+#project-panel-content .img.left {
 	float: left;
 	margin-right: 1em;
 }
 
-#project-panel-content img.right {
+#project-panel-content .img.right {
 	float: right;
 	margin-left: 1em;
 }
 
-#project-panel-content img.left,
-#project-panel-content img.right {
+#project-panel-content .img.left,
+#project-panel-content .img.right {
 	max-width: 33%;
 	margin-bottom: 1em;
 }
 
-#project-panel-content img.banner {
+#project-panel-content .img.banner {
     width: 100%;
 	margin-bottom: 1em;
 }
@@ -2520,8 +2524,8 @@ button:active,
 
 @media screen and (max-width: 736px) {
 
-	#project-panel-content img.left,
-	#project-panel-content img.right {
+	#project-panel-content .img.left,
+	#project-panel-content .img.right {
 		margin-right: 0;
 		margin-left: 0;
 		padding: 0 5% 1em;
