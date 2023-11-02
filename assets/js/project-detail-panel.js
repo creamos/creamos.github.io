@@ -28,28 +28,30 @@ function fillPanelFromFile(jsonFile) {
 
 function emptyPanelContent() {
     var panel = document.getElementById('project-panel-content');
+
+    // remove nodes that aren't elements
     for (let index = 0; index < panel.childNodes.length; ) {
         const childNode = panel.childNodes[index];
         
         // look for nodes that must be kept
-        if (childNode.nodeType == Node.ELEMENT_NODE) {
+        if (childNode.nodeType == Node.ELEMENT_NODE)
+            index++;
+        else childNode.remove();
+    }
 
-            var nodeID = (Element(childNode)).getAttribute('id');
-            if (nodeID == "project-content-header" || nodeID == "project-external-link") {
-                index++
-                continue;
-            }
-        }
-        
-        // if the node doestn't match
-        childNode.remove();
+    for (let index = 0; index < panel.children.length; ) {
+        const childElement = panel.children[index];
+
+        if (childElement.id == 'project-content-header' || childElement.id == 'project-external-link')
+            index++;
+        else childElement.remove();
+    }
 
         // if (childNode.nodeType == Node.ELEMENT_NODE && childNode.nodeName == "HEADER"||
         // childNode.elemenel)
         //     index++
         // else
             
-    }
 }
 
 function fillPanelFromData(jsonData) {
@@ -83,6 +85,7 @@ function getElementTemplateGenerator(type, dataContent) {
     switch (type) {
         case 'header': return headerElement(dataContent);
         case 'text': return textElement(dataContent);
+        case 'big-label': return bigLabelElement(dataContent);
         case 'space': return spaceElement(dataContent);
         case 'banner': return bannerElement(dataContent);
         case 'left-img': return leftImageElement(dataContent);
@@ -153,8 +156,14 @@ function videoElement(data) {
     `;
 }
 
-function cleanerElement(dataContent) {
+function cleanerElement(data) {
     return `
         <div class="cleaner"></div>
+    `;
+}
+
+function bigLabelElement(data) {
+    return `
+        <p class="big-label">${data}</p>
     `;
 }

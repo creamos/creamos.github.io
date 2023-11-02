@@ -2,6 +2,6 @@
     "title":"Buddies Breakout",
     "link":"https://creamos.itch.io/buddies-breakout",
     "content": [
-
+        { "type": "big-label", "value": "Nothing much to see here...<br/>For now!" }
     ]
 }

@@ -2,6 +2,6 @@
     "title":"Dive Bomb",
     "link":"https://louis-vogel.itch.io/divebomb",
     "content": [
-
+        { "type": "big-label", "value": "Nothing much to see here...<br/>For now!" }
     ]
 }

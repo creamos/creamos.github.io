@@ -1,6 +1,6 @@
 {
     "title":"Robot Factories",
     "content": [
-
+        { "type": "big-label", "value": "Nothing much to see here...<br/>For now!" }
     ]
 }

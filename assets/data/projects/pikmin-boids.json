@@ -1,6 +1,6 @@
 {
     "title":"Pikmin Boids Prototype",
     "content": [
-
+        { "type": "big-label", "value": "Nothing much to see here...<br/>For now!" }
     ]
 }

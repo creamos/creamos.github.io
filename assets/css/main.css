@@ -2548,6 +2548,14 @@ button:active,
 	clear: both;
 }
 
+#project-panel-content .big-label {
+    font-family: 'LatoBlack';
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 0;
+    line-height: 1.25em;
+}
+
 #project-panel-content h2 {
     text-align: center;
 }
