@@ -30,11 +30,25 @@ function emptyPanelContent() {
     var panel = document.getElementById('project-panel-content');
     for (let index = 0; index < panel.childNodes.length; ) {
         const childNode = panel.childNodes[index];
+        
+        // look for nodes that must be kept
+        if (childNode.nodeType == Node.ELEMENT_NODE) {
 
-        if (childNode.nodeType == Node.ELEMENT_NODE && childNode.nodeName == "HEADER")
-            index++
-        else
-            childNode.remove();
+            var nodeID = (Element(childNode)).getAttribute('id');
+            if (nodeID == "project-content-header" || nodeID == "project-external-link") {
+                index++
+                continue;
+            }
+        }
+        
+        // if the node doestn't match
+        childNode.remove();
+
+        // if (childNode.nodeType == Node.ELEMENT_NODE && childNode.nodeName == "HEADER"||
+        // childNode.elemenel)
+        //     index++
+        // else
+            
     }
 }
 
@@ -46,6 +60,10 @@ function fillPanelFromData(jsonData) {
     // set title field
     var title = document.getElementById('project-panel-title');
     title.innerHTML = jsonData.title;
+
+    // set external link
+    var externalLink = document.getElementById('project-external-link').getElementsByTagName('a')[0];
+    externalLink.setAttribute("href", jsonData.link);
     
     // generate the page content
     var panel = document.getElementById('project-panel-content');

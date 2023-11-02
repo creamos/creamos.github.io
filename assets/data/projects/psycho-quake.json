@@ -1,5 +1,6 @@
 {
     "title":"PSYCHO Quake",
+    "link":"https://louis-vogel.itch.io/psychoquake",
     "content": [
         { "type": "header", "value": "Introduction" },
         { "type": "text",   "value": "PSYCHO Quake is a multiplayer Quake-like prototype. Up to 8 players can join the battle and team up in a 4v4 confrontation." },

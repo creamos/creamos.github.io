@@ -1,5 +1,6 @@
 {
     "title":"The Goddesses Are Gone",
+    "link":"https://creamos.itch.io/the-goddesses-are-gone",
     "content": [
         { "type": "header", "value": "Introduction" },
         { "type": "text",   "value": "The Goddesses are Gone is a tiny, solo, scoring-oriented strategy game made with Unity."},

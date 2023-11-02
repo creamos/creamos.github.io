@@ -2384,6 +2384,7 @@ button:active,
     background: var(--color-shade-3) padding-box;
 	height: 90%;
 	width: 90%;
+	max-width: 1000pt;
 	position: relative;
     padding: 0.5em;
 }
@@ -2457,6 +2458,27 @@ button:active,
     width: 2.25em;
     height: 2.25em;
     line-height: 2.25em;
+}
+
+#project-external-link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2em;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    border: 1px dashed;
+    padding: 5pt;
+}
+
+#project-external-link a {
+	border: none;
+}
+
+.button.small {
+    padding: 0.5em 1.5em;
+    font-size: 12pt;
 }
 
 #project-panel-content header {
