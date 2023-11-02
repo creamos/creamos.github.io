@@ -2394,7 +2394,7 @@ button:active,
 	text-align: justify;
 	height: 100%;
 	width: 100%;
-    padding: 2em;
+    padding: 8pt;
 }
 
 #project-panel-content::-webkit-scrollbar-track {
@@ -2490,7 +2490,7 @@ button:active,
 
 #project-panel-content img.left,
 #project-panel-content img.right {
-	max-width: 50%;
+	max-width: 33%;
 	margin-bottom: 1em;
 }
 
