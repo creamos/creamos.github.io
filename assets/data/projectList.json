@@ -11,6 +11,17 @@
     },
 
     {
+        "title":"Shokh",
+        "link_icon":"fa-itch-io",
+        "link":"https://creamos.itch.io/",
+        "topic":"School project - Vertical slice",
+        "thumbnail":"/images/thumbnails/shokh.png",
+        "tags":["#parkour #fast-paced #momentum #intertwined-environments #unreal-engine"],
+        "path":"assets/data/projects/shokh.json",
+        "interest":3
+    },
+
+    {
         "title":"Party Knight",
         "link_icon":"fa-itch-io",
         "link":"https://louis-vogel.itch.io/party-knight",
