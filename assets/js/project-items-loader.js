@@ -43,9 +43,11 @@ function projectEntryGenerator() {
 
     this.createPanels = function createPanels(projectsTable, containers) {
 
+        projectsTable.sort((a,b) => b.interest - a.interest);
+
         for (let index = 0; index < projectsTable.length; index++) {
             const projectEntry = projectsTable[index];
-            const container = containers[Math.floor(index*containers.length/projectsTable.length)];
+            const container = containers[index % containers.length];
 
             container.insertAdjacentHTML("beforeend", itemTemplate(projectEntry));
         }
