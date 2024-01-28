@@ -2495,6 +2495,10 @@ button:active,
     margin-bottom: 1em;
 }
 
+#project-panel-content video {
+	max-width: 100%;
+}
+
 #project-panel-content .img {
 	max-width: 100%;
     display: flex;
