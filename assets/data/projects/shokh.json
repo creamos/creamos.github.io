@@ -4,7 +4,7 @@
     "content": [
         { "type": "header", "value": "Introduction" },
         { "type": "text",   "value": "Shokh is an upcoming fast-paced solo parkour game made with Unreal Engine."},
-        { "type": "text",   "value": "The whole concept of the game is about speed, momentum presevertion and gigantism. The game is structured in a succession of short linear levels to promote replayability and time trial in the fashion of Neon White. The spice of the game comes with the learning of the levels layout and subtile movement mechanics of the controller. "},
+        { "type": "text",   "value": "The whole concept of the game is about speed, momentum preservation and gigantism. The game is structured in a succession of short linear levels to promote replayability and time trial in the fashion of Neon White. The spice of the game comes with the learning of the levels layout and subtile movement mechanics of the controller. "},
         { "type": "header", "value": "Context" },
         { "type": "text",   "value": "Shokh is still under development. It's a vertical slice developed over the course of 4 months as part of my Master's degree final year project. We were a team of 10 students aiming to develop this game as a small indie studio would.<br/>Our team was composed of a project manager, an ergonomist, two 3d artists, a sound designer, two game designers and three programmers including me." }
     ]
