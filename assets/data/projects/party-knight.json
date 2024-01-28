@@ -10,6 +10,6 @@
         { "type": "text",   "value": "This game was developed over the course of 7 months as part of a long-run school project. We were a team of 15 or so students with a manager, a game designer, two programmers and a lot of game artists." },
         { "type": "text",   "value": "Party Knight was the first project of this scale on which I worked. Being one of the only two programmers, I had the opportunity to work on a huge portion of the game features." },
         { "type": "text",   "value": "On top of working on the mini-games within the game, I developed: <br/>&emsp;- The modular multiplayer system that takes into account the varying number of players.<br/>&emsp;- The CPUs and their behaviours that replace the missing players.<br/>&emsp;- Various in-engine tools for animations testings, scenes & assets management.<br/>&emsp;- A runtime skeleton-retargeting feature, to be able to swap parts of the knight model to create various characters." },
-        { "type": "center-img", "value": "videos/projects/party-knight/animation-tool.mp4" }
+        { "type": "video", "value": { "link": "videos/projects/party-knight/animation-tool.mp4", "width": 1024 } }
     ]
 }
